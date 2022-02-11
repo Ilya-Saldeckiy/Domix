@@ -1,0 +1,852 @@
+
+
+.about__cities-section{
+  background: url("../img/about__map.png") no-repeat;
+  background-position: 100% 67%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 70px;
+
+  @media (max-width: 1299.5px) {
+    background-size: 74%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.about__page{
+  & .about{
+    &__banner{
+      width: 100%;
+      height: 400px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      border-radius: 12px;
+      margin-bottom: 93px;
+
+      &-text{
+        position: absolute;
+        bottom: 50px;
+        left: 60px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 5px;
+        width: 446px;
+        padding: 24px;
+
+        & p{
+          @include f_20;
+          margin-bottom: 0;
+
+          &:not(:last-child){
+            margin-bottom: 16px;
+          }
+
+          &:last-child{
+            @include f_16;
+          }
+        }
+      }
+    }
+
+    &__description{
+
+      &:before{
+        content: "";
+        background: $Grey_3;
+        width: 520px;
+        height: 1px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &:after{
+        content: "";
+        background: $Grey_3;
+        width: 520px;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      padding-top: 60px;
+      padding-bottom: 60px;
+      position: relative;
+      width: 912px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 60px;
+
+      & p{
+        text-align: center;
+        @include f_20;
+        margin-bottom: 0;
+      }
+    }
+
+    &__cities-container{
+
+      width: 325px;
+
+      & .shop__item_count-block{
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 91px;
+      }
+
+      & .shop__item_count-block-white{
+        width: 132px;
+        height: 120px;
+      }
+
+      & .shop__item_count-block-white-count{
+        font-size: 55px;
+        line-height: 66px;
+      }
+
+      & .shop__item_count-block-tittle{
+        @include f_18;
+      }
+    }
+
+    &__cities{
+      width: 250px;
+      @include f_16;
+      margin-bottom: 0;
+      color: $Grey_1;
+    }
+
+    &__middle_card{
+
+      &-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 46px;
+        row-gap: 46px;
+        margin-bottom: 127px;
+      }
+
+      &-item{
+
+        width: calc(33% - 46px);
+        padding: 32px 32px 40px;
+        border-radius: 8px;
+
+        &:not(:first-child){
+          background-color: $Grey_4;
+        }
+
+        & h2{
+          font-size: 40px;
+          font-family: Circe;
+          font-weight: 700;
+          line-height: 48px;
+          margin-bottom: 0;
+        }
+
+        &__caption{
+          display: flex;
+          align-items: center;
+          margin-bottom: 24px;
+
+          & svg{
+            margin-right: 24px;
+          }
+
+          & h3{
+            @include f_20_b;
+            margin-bottom: 0;
+          }
+        }
+
+        & p{
+          @include f_14;
+          color: $Grey_1;
+          margin-bottom: 0;
+        }
+
+      }
+    }
+
+    &__video-position{
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 127px;
+
+      & .article__card-video{
+        max-width: 617px;
+        height: 410px;
+        margin-right: 78px;
+
+        & .item_video{
+          border-radius: 8px;
+
+          &:after{
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+
+    &__video{
+
+      &-tittle{
+        @include f_20;
+        margin-bottom: 40px;
+      }
+
+      &-text_block{
+
+        & ul{
+
+          display: flex;
+          flex-wrap: wrap;
+          width: 585px;
+          row-gap: 24px;
+          margin-bottom: 0;
+          font-size: 20px;
+          padding-left: 20px;
+
+          & li{
+            list-style-type: square;
+            width: 259px;
+            color: $Brown_1;
+
+            & span{
+              @include f_20_b;
+              color: $Black;
+            }
+          }
+
+        }
+
+      }
+
+    }
+
+    &__under_card{
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 46px;
+        column-gap: 46px;
+      }
+
+      &-item{
+        width: calc(50% - 46px);
+        padding: 32px;
+        border: 1px solid $Grey_3;
+        position: relative;
+        padding-bottom: 80px;
+
+        & h3{
+          @include f_34_b;
+          color: $Black;
+          margin-bottom: 24px;
+        }
+
+        & p{
+          @include f_16;
+          color: $Black;
+          margin-bottom: auto;
+
+          :last-child{
+            margin-bottom: 40px;
+          }
+        }
+
+        &-link_block{
+
+          display: flex;
+          align-items: center;
+          column-gap: 64px;
+          margin-bottom: 40px;
+
+
+          & .links{
+
+            & a{
+              display: block;
+              color: $Black;
+              @include f_16;
+
+              &:not(:last-child){
+                margin-bottom: 16px;
+              }
+            }
+          }
+
+          & .social{
+            & .about__mail{
+              display: block;
+              color: $Brown_1;
+              @include f_16_b;
+              margin-bottom: 12px;
+              }
+            }
+
+          & div{
+            display: block;
+            align-items: center;
+
+            & a{
+              display: inline;
+              margin-bottom: 0;
+
+              &:not(:last-child){
+                margin-right: 22px;
+              }
+            }
+          }
+        }
+
+        & .btn{
+          width: 220px;
+          height: 48px;
+          @include f_16_b;
+          margin-top: 0;
+          position: absolute;
+          bottom: 32px;
+        }
+      }
+    }
+
+  }
+}
+
+.about__page .single-zag{
+  margin-bottom: 62px;
+}
+
+.about__banner-text-mobile{
+  display: none;
+}
+
+.about__page .about__middle_card-item:first-child{
+  padding-left: 0;
+}
+
+.about__page .about__video-text_block ul{
+  column-gap: 8px;
+}
+
+.yellow {
+
+  & .about__page .about__video-text_block ul li {
+    color: $Yellow_2;
+  }
+
+  & .about__page .about__under_card-item-link_block .social .about__mail {
+    color: $Grey_1;
+    text-decoration: underline;
+  }
+
+  & .about__page .about__video-position .article__card-video .item_video:after {
+    background: url('../img/video2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  & .about__cities-section {
+    background-image: url("../img/about__map-yellow.png");
+
+    @media (max-width: 980px) {
+      background: 0;
+    }
+  }
+
+  & .about__map-mobile{
+    background-image: url("../img/about__map-yellow.png");
+  }
+}
+
+
+@media (max-width: 1199.5px) {
+  .about__page .about__middle_card-list{
+    row-gap: 16px;
+    column-gap: 16px;
+  }
+
+  .about__page .about__middle_card-item{
+    width: calc(33% - 16px);
+  }
+
+  .about__page .about__video-position .article__card-video{
+    margin-right: 16px;
+  }
+
+  .about__page .about__under_card-item-link_block{
+    column-gap: 16px;
+  }
+
+  .about__page .about__video-position .article__card-video{
+    height: 343px;
+  }
+
+  .about__page .about__video-tittle{
+    margin-bottom: 40px;
+  }
+
+  .about__page .about__video-text_block ul{
+    row-gap: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .about__page .about__description{
+    width: 100%;
+  }
+
+  .about__map-mobile{
+    background: url("../img/about__map.png") no-repeat;
+  }
+
+  .about__page .about__banner{
+      &-text{
+       display: block;
+      }
+  }
+
+  .about__banner-text-mobile{
+
+    text-align: left;
+    margin-bottom: 26px;
+
+    & p{
+      @include f_20;
+
+      &:not(:last-child){
+        margin-bottom: 16px;
+      }
+
+      &:last-child{
+        @include f_16;
+      }
+    }
+  }
+
+  .about__page .about__description{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+
+    &:before{
+      width: 100%;
+    }
+
+    &:after{
+      width: 100%;
+    }
+  }
+
+  .about__page .about__banner{
+    margin-bottom: 20px;
+  }
+
+  .about__page .about__cities-container{
+    width: 100%;
+  }
+
+  .about__page .about__cities-container .shop__item_count-block-white{
+    width: calc(50% - 16px);
+  }
+
+  .shop-page .shop__item_count-block-white:not(:last-child){
+    margin-right: auto;
+  }
+
+  .shop-page .shop__item_count-block-white{
+    margin-right: 0;
+  }
+
+  .shop-page .shop__item_count-block{
+    justify-content: space-between;
+  }
+
+  .about__page .about__cities-container .shop__item_count-block{
+    margin-bottom: 30px;
+  }
+
+  .about__page .about__cities{
+    width: 100%;
+  }
+
+  .about__cities-section{
+    margin-bottom: 31px;
+  }
+
+
+
+  .about__page .about__middle_card-list{
+    margin-bottom: 30px;
+  }
+
+
+
+  .about__page .about__video-tittle{
+    margin-bottom: 24px;
+  }
+
+
+
+  .about__page .about__under_card-list{
+    row-gap: 24px;
+    column-gap: 24px;
+  }
+
+  .about__page .about__banner{
+    margin-bottom: 93px;
+  }
+
+  .about__page .about__cities-container .shop__item_count-block{
+    width: 325px;
+  }
+
+  .about__page .about__cities{
+    width: 300px;
+  }
+
+  .about__page .about__cities-container .shop__item_count-block {
+    margin-bottom: 88px;
+  }
+
+  .about__cities-section{
+    background-size: 70%;
+  }
+
+  .about__page .about__video-text_block ul{
+    width: 470px;
+  }
+
+  .about__page .about__video-text_block ul li{
+    width: calc(51% - 16px);
+  }
+
+  .about__page .about__video-position{
+    margin-bottom: 63px;
+  }
+
+  .about__page .about__under_card-item p{
+    margin-bottom: 16px;
+  }
+
+}
+
+@media (max-width: 980px) {
+  .about__banner-text-mobile{
+    display: block;
+  }
+
+  .about__page .about__under_card-item{
+    width: 100%;;
+  }
+
+  .about__map-mobile{
+    background: url("../img/about__map.png") no-repeat;
+    background-position: top right;
+    background-size: contain;
+    height: 300px;
+  }
+
+  .about__page .about__video-position{
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+
+  .about__page .about__video-position .article__card-video{
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    height: 400px;
+    margin-bottom: 36px;
+  }
+
+  .about__page .about__video-text_block{
+    width: 100%;
+
+    & ul{
+      width: 100%;
+    }
+  }
+
+  .about__cities-section{
+    background: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .about__page .about__middle_card-item {
+    width: calc(50% - 16px);
+  }
+
+  .about__page .about__video-position{
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+
+  .about__page .about__video-position .article__card-video{
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    height: 400px;
+    margin-bottom: 36px;
+  }
+
+  .about__page .about__video-text_block{
+    width: 100%;
+
+    & ul{
+      width: 100%;
+    }
+  }
+
+  .about__page .about__banner{
+    &-text{
+      display: none;
+    }
+  }
+
+  .about__page .about__cities-container .shop__item_count-block{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about__page .about__cities{
+    width: 100%;
+  }
+
+  .about__page .about__banner{
+    margin-bottom: 20px;
+  }
+
+  .about__page .about__under_card-item{
+    border-radius: 8px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+
+  .about__map-mobile{
+    background-size: contain;
+    height: 200px;
+  }
+
+  .about__page .single-zag{
+    display: block;
+    @include f_24_b;
+    margin-bottom: 24px;
+  }
+
+  .about__page .about__banner{
+    height: 190px;
+  }
+
+  .about__banner-text-mobile p{
+    @include f_16;
+
+    &:last-child{
+      @include f_12;
+    }
+  }
+
+  .about__page .about__description p{
+    @include f_16;
+  }
+
+  .about__page .about__middle_card-item{
+    width: 100%;
+  }
+
+  .about__page .about__middle_card-item h2 br{
+    display: none;
+  }
+
+  .about__page .about__middle_card-item:first-child{
+    padding: 0;
+  }
+
+  .modal{
+    top: 0;
+  }
+
+  .about__page .about__middle_card-list{
+    row-gap: 20px;
+  }
+
+  .about__page .about__middle_card-item h2{
+    font-size: 26px;
+    line-height: 48px;
+  }
+
+  .about__page .about__middle_card-item__caption h3{
+    @include f_16_b;
+  }
+
+  .about__page .about__middle_card-item__caption svg{
+    height: 48px;
+    width: 48px;
+  }
+
+  .about__page .about__middle_card-item p{
+    font-size: 12px;
+  }
+
+  .about__page .about__video-position .article__card-video{
+    height: 190px;
+    margin-bottom: 30px;
+  }
+
+  .about__page .about__video-position .article__card-video .item_video:after{
+    width: 70px;
+    height: 70px;
+  }
+
+  .about__page .about__video-text_block ul li span{
+    @include f_14_b;
+  }
+
+  .about__page .about__video-text_block ul li{
+    width: 151px;
+  }
+
+  .about__page .about__video-text_block ul{
+    font-size: 16px;
+    padding-left: 16px;
+  }
+
+  .about__page .about__under_card-item{
+    padding: 16px;
+    padding-bottom: 24px;
+  }
+
+  .about__page .about__under_card-item h3{
+    @include f_20_b;
+    margin-bottom: 24px;
+  }
+
+  .about__page .about__under_card-item-link_block div a:not(:last-child){
+    margin-right: 0;
+  }
+
+  .about__page .about__under_card-item-link_block .links a{
+    @include f_14;
+  }
+
+  .about__page .about__under_card-item-link_block .social .about__mail{
+    @include f_14_b;
+  }
+
+  .about__page .about__under_card-item-link_block div a svg{
+    width: 21px;
+    height: 21px;
+  }
+
+  .about__page .about__under_card-item-link_block div a:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .about__page .about__under_card-item-link_block{
+    justify-content: space-between;
+  }
+
+  .about__page .about__under_card-item .btn{
+    position: static;
+    width: 100%;
+  }
+
+  .about__page .about__under_card-item p{
+    margin-bottom: 40px;
+  }
+
+  .modal-text .modal-content{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 0!important;
+  }
+
+  .map__modal .modal-content{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 0!important;
+    overflow: auto;
+  }
+
+  .about__page .cart-zag h1{
+    @include f_24_b;
+  }
+
+  .about__page .about__cities{
+    line-height: 28px;
+  }
+
+  .about__page .about__middle_card-item{
+    padding: 32px;
+  }
+
+  .about__page .about__middle_card-item__caption h3 br{
+    display: none;
+  }
+
+  .about__page .about__middle_card-item__caption h3{
+    line-height: 20px;
+  }
+
+  .about__page .about__middle_card-item p{
+    line-height: 15px;
+  }
+
+  .about__page .about__video-tittle{
+    @include f_16;
+  }
+
+  .about__page .about__video-text_block ul{
+    font-size: 20px;
+  }
+
+  .about__page .about__video-text_block ul li span{
+    position: relative;
+    top: -2px;
+  }
+
+  .about__page .about__video-text_block ul li{
+    margin-right: auto;
+  }
+
+  .about__page .about__video-text_block ul {
+    row-gap: 24px;
+  }
+
+  .about__page .about__under_card-item-link_block div a:not(:last-child) {
+    margin-right: 14px;
+  }
+
+
+
+}
+
+@media (max-width: 375px) {
+
+  .about__map-mobile {
+    background-size: cover;
+    height: 236px;
+  }
+}

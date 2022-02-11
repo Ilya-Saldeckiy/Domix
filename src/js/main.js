@@ -1,0 +1,17 @@
+//= partials/jquery-3.2.1.min.js
+//= partials/popper.min.js
+//= partials/bootstrap.min.js
+//= partials/slick.min.js
+//= partials/perfect-scrollbar.min.js
+//= partials/jquery-ui.min.js
+//= partials/jquery.ui.touch-punch.min.js
+//= partials/jquery.formstyler.min.js
+//= partials/jquery.fancybox.min.js
+//= partials/select2.min.js
+//= partials/ResizeSensor.js
+//= partials/stickySidebar.js
+//= partials/jquery.touch.js
+//= partials/jquery.swipe.js
+//= partials/inputmask.min.js
+//= partials/registerMap.js
+//= partials/scripts.js

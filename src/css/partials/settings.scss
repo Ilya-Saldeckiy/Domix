@@ -1,0 +1,398 @@
+/*start colors*/
+$Black: #242424;
+.Black {
+  color: $Black !important;
+}
+$White: #FFFFFF;
+.White {
+  color: $White !important;
+}
+$Grey_0: #5B5B5B;
+.Grey_0 {
+  color: $Grey_0 !important;
+}
+$Grey_1: #858585;
+.Grey_1 {
+  color: $Grey_1 !important;
+}
+$Grey_2: #C4C4C4;
+.Grey_2 {
+  color: $Grey_2 !important;
+}
+$Grey_3: #e1e1e1;
+.Grey_3 {
+  color: $Grey_3 !important;
+}
+$Grey_4: #F5F4F0;
+.Grey_4 {
+  color: $Grey_4 !important;
+}
+$Grey_5: #97A4AF;
+.Grey_5 {
+  color: $Grey_5 !important;
+}
+$Brown_1: #922F27;
+.Brown_1 {
+  color: $Brown_1 !important;
+}
+$Brown_2: #BB3D38;
+.Brown_2 {
+  color: $Brown_2 !important;
+}
+$Brown_3: #DF4A43;
+.Brown_3 {
+  color: $Brown_3 !important;
+}
+$Green_1: #82D3B6;
+.Green_1 {
+  color: $Green_1 !important;
+}
+$Green_2: #29C68D;
+.Green_2 {
+  color: $Green_2 !important;
+}
+$Yellow_1: #FFE152;
+.Yellow_1 {
+  color: $Yellow_1 !important;
+}
+$Yellow_2: #FFE04D;
+.Yellow_2 {
+  color: $Yellow_2 !important;
+}
+$Orange_1: #F4B556;
+.Orange_1 {
+  color: $Orange_1 !important;
+}
+$Red_1: #FF000C;
+.Red_1 {
+  color: $Red_1 !important;
+}
+$Red_2: #F55E65;
+.Red_2 {
+  color: $Red_2 !important;
+}
+$Blue_1: #007FBB;
+.Blue_1 {
+  color: $Blue_1 !important;
+}
+$Violet_1: #7B61FF;
+.Violet_1 {
+  color: $Violet_1 !important;
+}
+/*end colors*/
+
+/*start font-size*/
+@mixin reset_p {
+  margin-bottom: 0;
+}
+
+@mixin f_60_b {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: Circe;
+}
+@mixin f_60 {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: Circe;
+}
+@mixin f_34_b {
+  font-size: 34px;
+  font-weight: 700;
+  font-family: Circe;
+}
+@mixin f_34 {
+  font-size: 34px;
+  font-weight: 400;
+  font-family: Circe;
+}
+@mixin f_32_b {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: Circe;
+}
+@mixin f_32 {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: Circe;
+}
+@mixin f_28_b {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: Circe;
+}
+@mixin f_28 {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: Circe;
+}
+@mixin f_24_b {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Circe;
+}
+@mixin f_24 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Circe;
+}
+@mixin f_20_b {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Circe;
+}
+@mixin f_20 {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Circe;
+}
+@mixin f_18_b {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Circe;
+}
+@mixin f_18 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Circe;
+}
+@mixin f_16_b {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Circe;
+}
+@mixin f_16 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Circe;
+}
+@mixin f_13_b {
+  font-size: 13px;
+  font-weight: 700;
+  font-family: Circe;
+}
+@mixin f_13 {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: Circe;
+}
+@mixin f_14_b {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Circe;
+}
+@mixin f_14 {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Circe;
+}
+@mixin f_12_b {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Circe;
+}
+@mixin f_12 {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Circe;
+}
+/*end font-size*/
+
+/*start btn*/
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+.btn_red {
+  background-color: $Brown_1;
+  color: $White;
+  border: 1px solid $Brown_1;
+}
+.btn_red:hover {
+  background-color: $Brown_3;
+  color: $White;
+  border-color: $Brown_3;
+}
+.btn_red:active {
+  background-color: $Brown_2;
+  color: $White;
+  border-color: $Brown_2;
+}
+
+.wrapper__btn.active:hover {
+  background-color: $Brown_3;
+  color: $White;
+  border-color: $Brown_3;
+}
+.wrapper__btn.active:active {
+  background-color: $Brown_2;
+  color: $White;
+  border-color: $Brown_2;
+}
+.yellow {
+  .btn_red {
+    background-color: $Yellow_2;
+    color: $Black !important;
+    border-color: $Yellow_2;
+  }
+  .btn_red:hover {
+    background-color: #FCD000;
+    color: $Black;
+    border-color: #FCD000;
+  }
+  .btn_red:active {
+    background-color: $Yellow_2;
+    color: $Black;
+    border-color: $Yellow_2;
+  }
+
+  .wrapper__btn.active{
+    background-color: $Yellow_2;
+    color: $Black !important;
+    border-color: $Yellow_2;
+  }
+
+  .wrapper__btn.active:hover {
+    background-color: #FCD000;
+    color: $Black;
+    border-color: #FCD000;
+  }
+  .wrapper__btn.active:active {
+    background-color: $Yellow_2;
+    color: $Black;
+    border-color: $Yellow_2;
+  }
+}
+.btn_trans {
+  border: 1px solid #242424;
+  color: $Black;
+}
+.btn_trans:hover {
+  color: $Grey_1;
+  border-color: $Grey_1;
+}
+.btn_trans:focus {
+  border: 1px solid #242424;
+  color: $Black;
+}
+
+.btn_ret-trans {
+  border: 1px solid $Brown_1;
+  color: $Brown_1;
+}
+.btn_ret-trans:hover {
+  color: #BB3D38 !important;
+  border-color: #BB3D38;
+}
+.yellow {
+  .btn_ret-trans {
+    border: 1px solid $Black;
+    color: $Black;
+  }
+  .btn_ret-trans:hover {
+    color: $Black !important;
+    background-color: #fff;
+    border-color: #858585;
+  }
+}
+/*end btn*/
+
+input::-ms-clear {
+ display: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*modal по вертикали*/
+.modal {
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+/*a*/
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+ul li {
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:focus, a:visited, a:link, a:hover, button:focus, button:visited, button:link, button:hover {
+  outline: none;
+}
+*:focus, div:focus, input:focus, input:visited, input:hover, input:link {
+  outline: none;
+}
+textarea:focus, textarea:visited, textarea:hover, textarea:link {
+  outline: none;
+}
+button, label {
+  cursor: pointer;
+}
+/*container*/
+@media (max-width: 1309.5px) { 
+  .container {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1199.5px) { 
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 1023.5px) { 
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 1310px) { 
+  .container {
+    max-width: 1310px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/*placeholder*/
+::-webkit-input-placeholder {}
+::-moz-placeholder      {}
+:-moz-placeholder       {}
+:-ms-input-placeholder    {}

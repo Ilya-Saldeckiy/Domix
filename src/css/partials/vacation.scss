@@ -1,0 +1,433 @@
+
+
+.vacation__tittle{
+
+  & .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & h1{
+      margin-bottom: 0;
+    }
+
+    & .btn_ret-trans{
+      width: 200px;
+      height: 40px;
+      border-radius: 8px;
+    }
+  }
+}
+
+
+.vacation__page{
+
+  & .catalog-wr .catalog-cont .catalog-top{
+    display: none;
+  }
+
+  & .vacation{
+
+    &-list{
+      &__content-item{
+        padding: 32px;
+        border-radius: 12px;
+        border: 1px solid #E1E1E1;
+
+        &:not(:last-child){
+          margin-bottom: 24px;
+        }
+
+        &_position-caption{
+          align-items: flex-start;
+          justify-content: space-between;
+
+          & a{
+            @include f_24_b;
+            color: $Black;
+            margin-bottom: 0;
+          }
+
+          & div{
+
+            text-align: right;
+
+            & p{
+              @include f_24_b;
+              color: $Black;
+              margin-bottom: 0;
+            }
+
+            & span{
+              @include f_16;
+              color: #858585;
+              margin-bottom: 0;
+              text-align: right;
+            }
+          }
+        }
+
+        &-text-gray{
+          @include f_16;
+          color: #858585;
+          margin-bottom: 0;
+
+          &:after{
+            content: "•";
+            margin-left: 12px;
+            margin-right: 12px;
+            font-size: 24px;
+            line-height: 0;
+          }
+
+          &:last-child{
+            &:after{
+              display: none;
+            }
+          }
+        }
+
+        &-text-city{
+          @include f_16;
+          color: #858585;
+          margin-bottom: 0;
+
+          &:not(:last-child){
+            margin-right: 16px;
+          }
+
+          & svg{
+            margin-right: 8px;
+            position: relative;
+            top: -3px;
+          }
+        }
+
+        &_options{
+          margin-bottom: 16px;
+          align-items: center;
+        }
+
+        &-text{
+          @include f_16;
+          color: $Black;
+          margin-bottom: 16px;
+        }
+
+        &-btn{
+          width: 164px;
+          height: 40px;
+          margin-top: 24px;
+        }
+
+      }
+    }
+
+    &__item{
+
+      &-price{
+        @include f_24;
+        color: $Black;
+        margin-bottom: 16px;
+
+        & span{
+          color: #858585;
+          @include f_20;
+        }
+      }
+
+      &-list_options{
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+        color: #858585;
+        margin-bottom: 24px;
+
+        & li{
+          list-style-type: disc;
+
+          &:first-child{
+            list-style-type: none;
+          }
+
+          &:not(:last-child){
+            margin-right: 32px;
+          }
+        }
+      }
+
+      &-btn{
+        width: 256px;
+        height: 40px;
+        border-radius: 8px;
+        margin-bottom: 48px;
+      }
+
+      &-block{
+
+        &:not(:last-child){
+          margin-bottom: 48px;
+        }
+
+        &:last-child{
+          margin-bottom: 48px;
+        }
+
+        & h2{
+          @include f_20_b;
+          margin-bottom: 16px;
+          color: $Black;
+        }
+
+        &_list{
+          color: $Brown_1;
+          margin-bottom: 0;
+          width: 634px;
+          padding-left: 16px;
+
+          & li{
+            list-style-type: disc;
+
+            &:not(:last-child){
+              margin-bottom: 8px;
+            }
+
+            & span{
+              @include f_16;
+              color: $Black;
+              margin-bottom: 0;
+            }
+
+          }
+        }
+
+        &-map{
+          & h2{
+            @include f_20_b;
+            margin-bottom: 16px;
+            color: $Black;
+          }
+
+          & .vacation-list__content-item-text-city{
+            color: $Black;
+          }
+
+          & #map{
+            width: 900px;
+            height: 269px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+          }
+        }
+
+      }
+
+      &-date{
+        @include f_16;
+        color: #858585;
+        margin-bottom: 0;
+      }
+    }
+
+  }
+
+}
+
+.modal-worksheet {
+  & .regis__btn-add{
+    width: 184px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  & .regis__files-delete{
+    outline: none;
+    border: none;
+    padding: 0;
+  }
+
+  & .regis__files-block{
+    margin-bottom: 32px;
+  }
+
+  & .line{
+    width: 100%;
+    height: 1px;
+    background-color: #E1E1E1;
+    margin-bottom: 34px;
+  }
+
+  & .modal-dialog .modal-content .modal-body .modal-reviews-bottom .btn{
+    width: 157px;
+    padding: 11px 40px;
+
+    &:hover{
+      color: white;
+    }
+  }
+
+  & .modal-reviews__description{
+    margin-top: 12px;
+  }
+
+  & .modal-dialog{
+    max-width: 520px;
+  }
+
+  & .modal-dialog .modal-content .modal-body .close{
+    top: 30px;
+    right: 30px;
+  }
+
+  & .modal-dialog .modal-content .modal-body{
+    padding-top: 40px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+
+  .vacation__page .catalog-wr .catalog-cont .catalog-top{
+    display: block;
+  }
+
+  .vacation__page .catalog-top .btn_ret-trans{
+    width: 100%;
+  }
+
+  .vacation__tittle .container .btn_ret-trans{
+    display: none;
+  }
+
+  .article__page .catalog-filtrs-mob-top .catalog-filtrs-mob-results{
+    display: flex;
+    align-items: center;
+    padding: 0 16px 16px;
+    justify-content: space-between;
+
+    & div{
+      color: #858585;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: Circe;
+      line-height: 1;
+    }
+
+    & a{
+      display: inline-block;
+      color: #922F27;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: Circe;
+      line-height: 1;
+    }
+  }
+
+}
+
+@media (max-width: 980px) {
+  .vacation__page .vacation__item-block-map #map{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  .vacation__page .catalog-top .btn_ret-trans{
+    width: calc(100% - 50px);
+  }
+
+  .vacation__page .vacation-list__content-item_position-caption a{
+    @include f_20_b;
+  }
+
+  .vacation__page .vacation-list__content-item_position-caption div p{
+    @include f_20_b;
+    margin-bottom: -10px;
+  }
+
+  .vacation__page .vacation-list__content-item_position-caption div span{
+    @include f_12;
+  }
+
+  .vacation__page .vacation-list__content-item-text{
+    @include f_14;
+
+  }
+
+  .vacation__page .vacation-list__content-item{
+    padding: 16px;
+  }
+
+  .vacation-list__content-item-text-city-block{
+    row-gap: 16px;
+  }
+
+  .vacation__page .vacation-list__content-item-text-city{
+    @include f_14;
+  }
+
+  .vacation__page .vacation__item-list_options{
+    display: block;
+    padding-left: 16px;
+    margin-bottom: 24px;
+  }
+
+  .vacation__page .vacation__item-list_options li:not(:last-child){
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .vacation__page .vacation__item-list_options li:first-child{
+    list-style-type: disc;
+  }
+
+  .vacation__page h1{
+    margin-bottom: 31px ;
+  }
+
+  .vacation__page .vacation__item-btn{
+    margin-bottom: 44px;
+  }
+
+  .vacation__page .vacation__item-block_list{
+    width: 100%;
+  }
+
+  .vacation__page .vacation__item-block:last-child, .vacation__page .vacation__item-block:not(:last-child){
+    margin-bottom: 24px ;
+  }
+
+  .modal-worksheet{
+
+    & .modal-reviews-bottom {
+      position: fixed;
+      width: calc(100% - 30px)!important;
+      max-width: inherit;
+      left: 15px;
+      bottom: 20px;
+    }
+
+    & .regis__files-block{
+      margin-bottom: 30px;
+    }
+
+    & .modal-dialog .modal-content .modal-body .modal-reviews-bottom .btn{
+      width: 100%;
+      margin-right: 0;
+    }
+
+  }
+
+}
+
+
+@media (max-width: 580px) {
+
+  .vacation__page .vacation__item-btn{
+    width: 100%;
+    height: 56px;
+  }
+
+}

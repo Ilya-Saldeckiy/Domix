@@ -1,0 +1,134 @@
+//= template/header_inner.html
+
+<section class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs-list">
+            <li>
+                <a href="#">Главная</a>
+            </li>
+            <li>
+                Все вакансии
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="catalog-zag vacation__page">
+    <div class="container">
+        <h1>
+            Менеджер по закупкам
+        </h1>
+    </div>
+</section>
+
+<section class="vacation__page">
+    <div class="container">
+        <p class="vacation__item-price">60 000 ₽ <span>до вычета</span></p>
+        <ul class="vacation__item-list_options">
+            <li>Москва</li>
+            <li>График 2/2</li>
+            <li>Опыт от 3 лет</li>
+            <li>Полная занятость, полный день</li>
+        </ul>
+        <button class="btn btn_red vacation__item-btn">Откликнуться на вакансию</button>
+        <div class="vacation__item-block">
+            <h2>Обязанности:</h2>
+            <ul class="vacation__item-block_list">
+                <li><span>Формирование и корректировка заказа товаров</span></li>
+                <li><span>Приемка товара со складов и от «сторонних» поставщиков</span></li>
+                <li><span>Отслеживание и списание товаров‚ подготовка и участие в проведении инвентаризаций в магазине</span></li>
+                <li><span>Отслеживание сроков годности товара</span></li>
+            </ul>
+        </div>
+        <div class="vacation__item-block">
+            <h2>Требования:</h2>
+            <ul class="vacation__item-block_list">
+                <li><span>Ответственность, дисциплинированность, внимательность</span></li>
+                <li><span>Приемка тоНаличие аналогичного опыта является преимуществом</span></li>
+            </ul>
+        </div>
+        <div class="vacation__item-block">
+            <h2>Условия:</h2>
+            <ul class="vacation__item-block_list">
+                <li><span>Оформление в соответствии с ТК РФ</span></li>
+                <li><span>Стабильная официальная заработная плата, выплата 2 раза в месяц</span></li>
+                <li><span>График работы 5/2, 2/2</span></li>
+                <li><span>Возможность подработки (работа по совместительству)</span></li>
+                <li><span>Социальные гарантии, оплата отпусков и больничных листов</span></li>
+                <li><span>Работа рядом с домом</span></li>
+                <li><span>Скидки в магазинах сети</span></li>
+                <li><span>Фирменная спецодежда</span></li>
+                <li><span>Возможность профессионального и карьерного роста, корпоративное обучение</span></li>
+            </ul>
+        </div>
+        <div class="vacation__item-block-map">
+            <h2>Адрес</h2>
+            <div class="d-flex align-items-center flex-wrap vacation-list__content-item-text-city-block">
+                <p class="vacation-list__content-item-text-city">Санкт-Петербург, проспект Ветеранов, 122</p>
+                <p class="vacation-list__content-item-text-city">
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.468 10.3702L10.964 0.333313L8 6.2006L5.048 0.333313L1.532 10.3702H0.5V11.8913H5.804V10.3702H5.012L5.78 7.87114L8 12L10.22 7.87114L10.988 10.3702H10.196V11.8913H15.5V10.3702H14.468Z" fill="#FF000C"/>
+                    </svg>
+                    проспект Ветеранов
+                </p>
+            </div>
+            <div id="map"></div>
+            <p class="vacation__item-date">Вакансия опубликована 9 декабря 2021</p>
+        </div>
+    </div>
+</section>
+<section class="margin-item"></section>
+
+
+
+
+//= template/footer.html
+
+<script>
+    ymaps.ready(init);
+
+    function init() {
+        var mapPin = '../build/img/map_pin-red.svg';
+        let map = new ymaps.Map("map", {
+                center: [59.832574564304856,30.17894699999999],
+                zoom: 17
+            });
+
+        objectManager = new ymaps.ObjectManager({
+            clusterize: true,
+            gridSize: 32
+        });
+        // myMap.geoObjects.add(objectManager);
+        objectManager.objects.options.set('iconLayout', 'default#image');
+        objectManager.objects.options.set('iconImageHref', mapPin);
+        objectManager.objects.options.set('hideIconOnBalloonOpen', false);
+        objectManager.objects.options.set('balloonOffset', [0, -40]);
+
+
+        objectManager.add({
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "id":1,
+                    "geometry":{
+                        "type": "Point",
+                        "coordinates":[59.832574564304856,30.17894699999999]
+                    },
+                }
+            ]
+        })
+
+
+        map.controls.remove('geolocationControl'); // удаляем геолокацию
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль трафика
+        map.controls.remove('typeSelector'); // удаляем тип
+        map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+        map.controls.remove('rulerControl'); // удаляем контрол правил
+
+
+        map.geoObjects.add(objectManager);
+    }
+</script>

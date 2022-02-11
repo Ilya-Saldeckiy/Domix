@@ -1,0 +1,1677 @@
+//= template/header-simple-yellow.html
+<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+
+<section>
+    <div class="container">
+        <a href="#" class="back__cart">Назад в корзину</a>
+    </div>
+</section>
+<section class="regis-zag single-zag">
+    <div class="container">
+        <h1>
+            Оформление заказа
+        </h1>
+    </div>
+</section>
+<section id="mapReady">
+    <div class="container">
+        <h1 class="order__mobile-caption">Оформление заказа</h1>
+        <div class="regis__address-blocks">
+            <div class="btn wrapper__btn-delivery regis__address-btn active-delivery" data-tab="delivery">
+                <p class="regis__address-btn_caption">Доставка</p>
+                <p class="regis__address-btn_price">от 290 ₽</p>
+            </div>
+            <div class="btn wrapper__btn-delivery regis__address-btn" data-tab="pickup">
+                <p class="regis__address-btn_caption">Самовывоз</p>
+                <p class="regis__address-btn_price">Бесплатно</p>
+            </div>
+            <div class="btn wrapper__btn-delivery regis__address-btn" data-tab="post">
+                <p class="regis__address-btn_caption">Доставка по России</p>
+                <p class="regis__address-btn_price">Бесплатно</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container regis__steps-position d-flex">
+        <div class="regis__steps wrapper__content-delivery active-delivery" data-tab-content="delivery">
+            <div class="position-wrapper-steps">
+                <section class="regis__step-1">
+                    <div class="regis__step_caption-block">
+                        <span class="regis__step-number">1</span>
+                        <p class="regis__step_caption">Получатель</p>
+                    </div>
+                    <div class="wrapper-block regis__wrapper-block">
+                        <button data-tab="individual" class="btn wrapper__btn active">Физическое лицо</button>
+                        <button data-tab="legal" class="btn wrapper__btn">Юридическое лицо</button>
+                    </div>
+                    <div data-tab-content="individual" class="wrapper__content regis__individual active">
+                        <div class="form-floating regis__input-block">
+                            <input type="text" class="form-control regis__input" id="floatingInput" placeholder="Имя и Фамилия">
+                            <label class="regis__label" for="floatingInput">Имя и Фамилия</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="email" class="form-control regis__input" id="floatingInput2" placeholder="Электронная почта">
+                            <label class="regis__label" for="floatingInput2">Электронная почта</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="tel" class="form-control regis__input input__tel" id="floatingInput3" placeholder="Телефон">
+                            <label class="regis__label" for="floatingInput3">Телефон</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div data-tab-content="legal" class="wrapper__content regis__legal">
+                        <div class="form-floating regis__input-block">
+                            <input type="text" class="form-control regis__input" id="floatingInput4" placeholder="Имя и Фамилия">
+                            <label class="regis__label" for="floatingInput4">Имя и Фамилия</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="email" class="form-control regis__input" id="floatingInput5" placeholder="Электронная почта">
+                            <label class="regis__label" for="floatingInput5">Электронная почта</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="tel" class="form-control regis__input input__tel" id="floatingInput6" placeholder="Телефон">
+                            <label class="regis__label" for="floatingInput6">Телефон</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="number" class="form-control regis__input" id="floatingInput7" placeholder="ИНН">
+                            <label class="regis__label" for="floatingInput7">ИНН</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="text" class="form-control regis__input" id="floatingInput8" placeholder="Название организации">
+                            <label class="regis__label" for="floatingInput8">Название организации</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="regis__form_btn-add">
+                            <button type="button" class="btn regis__btn-add btn_red">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.075 14.1751L9.82502 2.92514C7.95002 0.975138 4.87502 0.975138 2.92502 2.85014C0.975024 4.72514 0.975024 7.87514 2.92502 9.75014L3.00002 9.82514L5.10002 12.0001L6.15002 10.9501L3.97502 8.77514C2.70002 7.50014 2.70002 5.32514 3.97502 4.05014C5.25002 2.77514 7.42502 2.70014 8.70002 3.97514C8.70002 3.97514 8.70002 3.97514 8.77502 4.05014L19.95 15.2251C21.3 16.5001 21.3 18.6751 20.025 19.9501C18.75 21.3001 16.575 21.3001 15.3 20.0251C15.3 20.0251 15.3 20.0251 15.225 19.9501L9.67502 14.4001C8.92502 13.6501 9.00002 12.4501 9.67502 11.7751C10.425 11.1001 11.55 11.1001 12.3 11.7751L15.375 14.8501L16.425 13.8001L13.275 10.6501C11.925 9.37514 9.82502 9.45014 8.55002 10.8001C7.35002 12.0751 7.35002 14.1001 8.55002 15.4501L14.175 21.0751C16.05 23.0251 19.125 23.0251 21.075 21.1501C23.025 19.2751 23.025 16.1251 21.075 14.1751Z" fill="#000"/>
+                                </svg>
+                                Прикрепить реквизиты</button>
+                            <p class="regis__btn-add_lower-text">
+                                Формат .pdf Максимальный размер файла: 2Mb
+                            </p>
+                            <div class="regis__files-block">
+                                <p class="regis__files-caption">document.pdf</p>
+                                <button type="button" class="btn regis__files-delete">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1.05L10.95 0L6 4.95L1.05 0L0 1.05L4.95 6L0 10.95L1.05 12L6 7.05L10.95 12L12 10.95L7.05 6L12 1.05Z" fill="#242424"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="regis__step-1">
+                    <div class="regis__step_caption-block">
+                        <span class="regis__step-number">2</span>
+                        <p class="regis__step_caption">Адрес доставки</p>
+                    </div>
+                    <div class="form-floating regis__input-block">
+                        <input type="text" name="address" class="form-control regis__input" id="address" placeholder="Название организации">
+                        <label class="regis__label" for="address">Введите адрес доставки</label>
+                        <button type="reset" class="btn clear__input">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <div id="map" class="map__delivery"></div>
+                        <button type="button" class="btn regis__shop-item_btn map__select-modile-btn" data-toggle="modal" data-target="#modalMapMobile">Указать точку на карте</button>
+                    </div>
+                    <div class="form-floating regis__input-block">
+                        <input type="tel" class="form-control regis__input input__tel" id="floatingInput12" placeholder="Название организации">
+                        <label class="regis__label" for="floatingInput12">Телефон мастера</label>
+                        <button type="reset" class="btn clear__input">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="form-check block__comments block__commentsDriver" onclick="viewCommentsDr()">
+                        <div class="catalog-filtr-checkbox">
+                            <input type="checkbox" onclick="viewComments()" id="catalog-filtr-ch11">
+                            <label class="form-check-label" for="catalog-filtr-ch11">Добавить комментарий водителю</label>
+                        </div>
+                    </div>
+                    <div class="regis__textarea-block" id="commentsDriver3">
+                        <div class="form-group">
+                            <textarea placeholder="Комментарий к услуге" class="form-control" id="exampleFormControlTextarea2" rows="10"></textarea>
+                        </div>
+                    </div>
+                </section>
+                <section class="regis__step-1">
+                    <div class="regis__step_caption-block">
+                        <span class="regis__step-number">3</span>
+                        <p class="regis__step_caption">Дата и время</p>
+                    </div>
+                    <div class="regis__date-block">
+                        <p class="regis__step-subtitle">Дата доставки</p>
+                        <select class="js-example-basic-single" name="state">
+                            <option value="Сегодня, 10 ноября">Сегодня, 10 ноября</option>
+                            <option value="Завтра, 11 ноября">Завтра, 11 ноября</option>
+                        </select>
+                    </div>
+                    <div class="regis__time-block">
+                        <p class="regis__step-subtitle">Время доставки</p>
+                        <form>
+                            <div class="regis__time-block-today">
+                                <div class="block-times">
+                                    <div class="radio">
+                                        <input class="custom-radio date-radio" type="radio" id="today" name="color">
+                                        <label for="today">В течение дня</label>
+                                    </div>
+                                    <p class="regis__block-price">Бесплатно</p>
+                                </div>
+                                <div class="dropdown regis__dropdown-time">
+                                    <select class="js-example-basic-single" name="state">
+                                        <option value="Сегодня, 10 ноября">Сегодня, 10 ноября</option>
+                                        <option value="Завтра, 11 ноября">Завтра, 11 ноября</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="test regis__time-block-clock">
+                                <div class="block-times">
+                                    <div class="radio">
+                                        <input class="custom-radio date-radio" type="radio" id="clock" name="color">
+                                        <label for="clock">Точно ко времени</label>
+                                    </div>
+                                    <p class="regis__block-price">1 290 руб</p>
+                                </div>
+                                <div class="dropdown__position">
+                                    <div class="regis__dropdown-clock">
+                                        <select class="js-example-basic-single" name="state">
+                                            <option value="24">24</option>
+                                            <option value="23">23</option>
+                                        </select>
+                                    </div>
+                                    <div class="regis__dropdown-clock">
+                                        <select class="js-example-basic-single" name="state">
+                                            <option value="00">00</option>
+                                            <option value="01">01</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="regis__step-1 more">
+                    <div class="regis__step_caption-block">
+                        <span class="regis__step-number">4</span>
+                        <p class="regis__step_caption">Дополнительные услуги</p>
+                    </div>
+                    <div class="regis__time-block-today">
+                        <div class="regis__more-block">
+                            <div class="switch-btn" id="unloading" onclick="viewUnloading()"></div>
+                            <p class="regis__caption-elem">Выгрузка из машины</p>
+                            <p class="regis__block-price">Бесплатно</p>
+                        </div>
+                    </div>
+                    <div class="regis__time-block-today">
+                        <div class="regis__more-block-position">
+                            <div class="regis__more-block">
+                                <div class="switch-btn" onclick="viewRise()"></div>
+                                <p class="regis__caption-elem">Подъем на этаж</p>
+                                <p class="regis__block-price">290 руб</p>
+                            </div>
+                            <div class="regis__more-additional" id="rise">
+                                <p class="regis__more-additional-text">Этаж</p>
+                                <div class="count-block d-flex align-items-center">
+                                    <div class="product__floor-couner-position">
+                                        <input id="inputCounter2" type="number" min="1" step="1" value="4" class="single-sku__number" placeholder="in">
+                                    </div>
+                                </div>
+                                <div class="regis__more-additional-position__btn">
+                                    <div class="catalog-filtr-checkbox">
+                                        <input type="checkbox" id="catalog-filtr-ch1">
+                                        <label class="form-check-label" for="catalog-filtr-ch1">Есть лифт</label>
+                                    </div>
+                                    <div class="catalog-filtr-checkbox">
+                                        <input type="checkbox" id="catalog-filtr-ch2">
+                                        <label class="form-check-label" for="catalog-filtr-ch2"> Грузовой лифт</label>
+                                    </div>
+                                </div>
+                                <div class="position__regis-input-check">
+                                    <div>
+                                        <div class="catalog-filtr-checkbox d-flex">
+                                            <input type="checkbox" id="catalog-filtr-ch3">
+                                            <label class="form-check-label" for="catalog-filtr-ch3"> Грузчикам нужно нести заказ от машины до вас дальше 50 метров?</label>
+                                        </div>
+                                    </div>
+                                    <div class="positon__input-meters" id="meters">
+                                        <div class="form-floating regis__input-block">
+                                            <input type="number" class="form-control regis__input" id="floatingInput10" placeholder="ИНН">
+                                            <label class="regis__label" for="floatingInput10">Расстояние (м)</label>
+                                            <button type="reset" class="btn clear__input">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regis__warning-block warning-in-block">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0013 4.62842H11.9983L3.48633 20.9973L3.48775 20.9999H20.5119L20.5133 20.9973L12.0013 4.62842ZM11.1561 8.99987H12.8436V15.7499H11.1561V8.99987ZM11.9998 19.4999C11.7773 19.4999 11.5598 19.4339 11.3748 19.3103C11.1898 19.1867 11.0456 19.011 10.9604 18.8054C10.8753 18.5998 10.853 18.3736 10.8964 18.1554C10.9398 17.9372 11.047 17.7367 11.2043 17.5794C11.3616 17.422 11.5621 17.3149 11.7803 17.2715C11.9986 17.2281 12.2248 17.2504 12.4303 17.3355C12.6359 17.4207 12.8116 17.5648 12.9352 17.7499C13.0588 17.9349 13.1248 18.1524 13.1248 18.3749C13.1248 18.6732 13.0063 18.9594 12.7953 19.1704C12.5843 19.3813 12.2982 19.4999 11.9998 19.4999Z" fill="#F4B556"/>
+                                        <path d="M21.75 22.5H2.25001C2.12115 22.5 1.99447 22.4668 1.88218 22.4036C1.76988 22.3404 1.67576 22.2494 1.60889 22.1392C1.54203 22.0291 1.50466 21.9036 1.50041 21.7748C1.49615 21.646 1.52515 21.5183 1.58461 21.404L11.3346 2.65396C11.3979 2.53219 11.4935 2.43013 11.6108 2.3589C11.7281 2.28767 11.8627 2.25 12 2.25C12.1373 2.25 12.2719 2.28767 12.3892 2.3589C12.5065 2.43013 12.6021 2.53219 12.6654 2.65396L22.4154 21.404C22.4749 21.5183 22.5039 21.646 22.4996 21.7748C22.4953 21.9036 22.458 22.0291 22.3911 22.1392C22.3242 22.2494 22.2301 22.3404 22.1178 22.4036C22.0055 22.4668 21.8789 22.5 21.75 22.5V22.5ZM3.48803 21H20.512L20.5135 20.9975L12.0015 4.62856H11.9985L3.48653 20.9975L3.48803 21Z" fill="#F4B556"/>
+                                    </svg>
+                                    <p class="regis__warning-text">
+                                        Для точного расчёта стоимости подъёма на этаж крупногабаритного товара завершите оформление корзины и мы свяжемся с вами по указанному вами номеру телефона.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regis__warning-block">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0013 4.62842H11.9983L3.48633 20.9973L3.48775 20.9999H20.5119L20.5133 20.9973L12.0013 4.62842ZM11.1561 8.99987H12.8436V15.7499H11.1561V8.99987ZM11.9998 19.4999C11.7773 19.4999 11.5598 19.4339 11.3748 19.3103C11.1898 19.1867 11.0456 19.011 10.9604 18.8054C10.8753 18.5998 10.853 18.3736 10.8964 18.1554C10.9398 17.9372 11.047 17.7367 11.2043 17.5794C11.3616 17.422 11.5621 17.3149 11.7803 17.2715C11.9986 17.2281 12.2248 17.2504 12.4303 17.3355C12.6359 17.4207 12.8116 17.5648 12.9352 17.7499C13.0588 17.9349 13.1248 18.1524 13.1248 18.3749C13.1248 18.6732 13.0063 18.9594 12.7953 19.1704C12.5843 19.3813 12.2982 19.4999 11.9998 19.4999Z" fill="#F4B556"/>
+                            <path d="M21.75 22.5H2.25001C2.12115 22.5 1.99447 22.4668 1.88218 22.4036C1.76988 22.3404 1.67576 22.2494 1.60889 22.1392C1.54203 22.0291 1.50466 21.9036 1.50041 21.7748C1.49615 21.646 1.52515 21.5183 1.58461 21.404L11.3346 2.65396C11.3979 2.53219 11.4935 2.43013 11.6108 2.3589C11.7281 2.28767 11.8627 2.25 12 2.25C12.1373 2.25 12.2719 2.28767 12.3892 2.3589C12.5065 2.43013 12.6021 2.53219 12.6654 2.65396L22.4154 21.404C22.4749 21.5183 22.5039 21.646 22.4996 21.7748C22.4953 21.9036 22.458 22.0291 22.3911 22.1392C22.3242 22.2494 22.2301 22.3404 22.1178 22.4036C22.0055 22.4668 21.8789 22.5 21.75 22.5V22.5ZM3.48803 21H20.512L20.5135 20.9975L12.0015 4.62856H11.9985L3.48653 20.9975L3.48803 21Z" fill="#F4B556"/>
+                        </svg>
+                        <p class="regis__warning-text">
+                            Подъем на этаж линолеума, ковролина и искусственной травы длиной 3.1м, 3.5м, 4м - осуществляется вручную
+                        </p>
+                    </div>
+                    <div class="form-check block__comments" >
+                        <div class="catalog-filtr-checkbox services-checkbox">
+                            <input type="checkbox" onclick="viewComments()" id="catalog-filtr-ch12">
+                            <label class="form-check-label" for="catalog-filtr-ch12">Добавить комментарий по услугам</label>
+                        </div>
+                    </div>
+                    <div class="regis__textarea-block disabled" id="comments">
+                        <div class="form-group">
+                            <textarea placeholder="Комментарий к услуге" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                        </div>
+                    </div>
+                </section>
+                <section class="regis__step-1">
+                    <div class="regis__step_caption-block">
+                        <span class="regis__step-number">5</span>
+                        <p class="regis__step_caption">Способ оплаты</p>
+                    </div>
+                    <div class="regis__block-pay">
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="card" name="color">
+                            <label for="card">Картой на сайте</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/МИР.svg" alt="Мир">
+                                <img class="regis__block__img" src="img/Visa.svg" alt="Виза">
+                                <img class="regis__block__img" src="img/Mastercard.svg" alt="Мастеркард">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="wallet" name="color">
+                            <label for="wallet">Водителю наличными</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/wallet.svg" alt="кошелёк">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="cardDriver" name="color">
+                            <label for="cardDriver">Водителю картой</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/purchase.svg" alt="Карта">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="doli" name="color">
+                            <label for="doli">Долями</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/svgexport.svg" alt="Долями">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="apple" name="color">
+                            <label for="apple">Apple Pay</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/apple.PNG" alt="Apple Pay">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="google" name="color">
+                            <label for="google">Google Pay</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/Google_Pay.svg" alt="google">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+        <div class="regis__steps wrapper__content-delivery" data-tab-content="pickup">
+            <div class="position-wrapper-steps">
+                <section class="regis__step-1">
+                    <div class="regis__step_caption-block">
+                        <span class="regis__step-number">1</span>
+                        <p class="regis__step_caption">Получатель</p>
+                    </div>
+                    <div class="wrapper-block regis__wrapper-block">
+                        <button data-tab="individual" class="btn wrapper__btn active">Физическое лицо</button>
+                        <button data-tab="legal" class="btn wrapper__btn">Юридическое лицо</button>
+                    </div>
+                    <div data-tab-content="individual" class="wrapper__content regis__individual active">
+                        <div class="form-floating regis__input-block">
+                            <input type="text" class="form-control regis__input" id="floatingInput20" placeholder="Имя и Фамилия">
+                            <label class="regis__label" for="floatingInput20">Имя и Фамилия</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="email" class="form-control regis__input" id="floatingInput21" placeholder="Электронная почта">
+                            <label class="regis__label" for="floatingInput21">Электронная почта</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="tel" class="form-control regis__input input__tel" id="floatingInput22" placeholder="Телефон">
+                            <label class="regis__label" for="floatingInput22">Телефон</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div data-tab-content="legal" class="wrapper__content regis__legal">
+                        <div class="form-floating regis__input-block">
+                            <input type="text" class="form-control regis__input" id="floatingInput23" placeholder="Имя и Фамилия">
+                            <label class="regis__label" for="floatingInput23">Имя и Фамилия</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="email" class="form-control regis__input" id="floatingInput24" placeholder="Электронная почта">
+                            <label class="regis__label" for="floatingInput24">Электронная почта</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="tel" class="form-control regis__input input__tel" id="floatingInput25" placeholder="Телефон">
+                            <label class="regis__label" for="floatingInput25">Телефон</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="number" class="form-control regis__input" id="floatingInput26" placeholder="ИНН">
+                            <label class="regis__label" for="floatingInput26">ИНН</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="text" class="form-control regis__input" id="floatingInput27" placeholder="Название организации">
+                            <label class="regis__label" for="floatingInput8">Название организации</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="regis__form_btn-add">
+                            <button type="button" class="btn regis__btn-add btn_red">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.075 14.1751L9.82502 2.92514C7.95002 0.975138 4.87502 0.975138 2.92502 2.85014C0.975024 4.72514 0.975024 7.87514 2.92502 9.75014L3.00002 9.82514L5.10002 12.0001L6.15002 10.9501L3.97502 8.77514C2.70002 7.50014 2.70002 5.32514 3.97502 4.05014C5.25002 2.77514 7.42502 2.70014 8.70002 3.97514C8.70002 3.97514 8.70002 3.97514 8.77502 4.05014L19.95 15.2251C21.3 16.5001 21.3 18.6751 20.025 19.9501C18.75 21.3001 16.575 21.3001 15.3 20.0251C15.3 20.0251 15.3 20.0251 15.225 19.9501L9.67502 14.4001C8.92502 13.6501 9.00002 12.4501 9.67502 11.7751C10.425 11.1001 11.55 11.1001 12.3 11.7751L15.375 14.8501L16.425 13.8001L13.275 10.6501C11.925 9.37514 9.82502 9.45014 8.55002 10.8001C7.35002 12.0751 7.35002 14.1001 8.55002 15.4501L14.175 21.0751C16.05 23.0251 19.125 23.0251 21.075 21.1501C23.025 19.2751 23.025 16.1251 21.075 14.1751Z" fill="white"/>
+                                </svg>
+                                Прикрепить реквизиты</button>
+                            <p class="regis__btn-add_lower-text">
+                                Формат .pdf Максимальный размер файла: 2Mb
+                            </p>
+                            <div class="regis__files-block">
+                                <p class="regis__files-caption">document.pdf</p>
+                                <button type="button" class="btn regis__files-delete">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1.05L10.95 0L6 4.95L1.05 0L0 1.05L4.95 6L0 10.95L1.05 12L6 7.05L10.95 12L12 10.95L7.05 6L12 1.05Z" fill="#242424"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="regis__step-1">
+                    <div class="regis__step_caption-block">
+                        <span class="regis__step-number">2</span>
+                        <p class="regis__step_caption">Выберите магазин</p>
+                    </div>
+                    <div class="regis__shop-list">
+                        <div class="regis__shop-item">
+                            <div class="regis__shop-item_header">
+                                <h3 class="regis__shop-caption">Домикс «Сити Молл»</h3>
+                                <p class="regis__shop-text">11 ноября,<span>бесплатно</span></p>
+                            </div>
+                            <div class="regis__shop-item_body">
+                                <div class="regis__shop-position_address">
+                                    <div class="me-auto">
+                                        <p class="regis__shop-address">Югорский тракт, 38 (ТРЦ «Сургут Сити Молл»)</p>
+                                        <div class="regis__shop-position_time">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 15.5C3.85775 15.5 0.5 12.1423 0.5 8C0.5 3.85775 3.85775 0.5 8 0.5C12.1423 0.5 15.5 3.85775 15.5 8C15.5 12.1423 12.1423 15.5 8 15.5ZM8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM8.75 8H11.75V9.5H7.25V4.25H8.75V8Z" fill="#16A471"/>
+                                            </svg>
+                                            <p class="regis__shop-time">Ежедневно с 10:00 до 22:00</p>
+                                        </div>
+                                    </div>
+                                    <img src="img/header-logo_img2.svg" alt="Картинка">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regis__shop-item">
+                            <div class="regis__shop-item_header">
+                                <h3 class="regis__shop-caption">Домикс «Сити Молл»</h3>
+                                <p class="regis__shop-text">11 ноября,<span>бесплатно</span></p>
+                            </div>
+                            <div class="regis__shop-item_body">
+                                <div class="regis__shop-position_address">
+                                    <div class="me-auto">
+                                        <p class="regis__shop-address">Югорский тракт, 38 (ТРЦ «Сургут Сити Молл»)</p>
+                                        <div class="regis__shop-position_time">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 15.5C3.85775 15.5 0.5 12.1423 0.5 8C0.5 3.85775 3.85775 0.5 8 0.5C12.1423 0.5 15.5 3.85775 15.5 8C15.5 12.1423 12.1423 15.5 8 15.5ZM8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM8.75 8H11.75V9.5H7.25V4.25H8.75V8Z" fill="#16A471"/>
+                                            </svg>
+                                            <p class="regis__shop-time">Ежедневно с 10:00 до 22:00</p>
+                                        </div>
+                                    </div>
+                                    <img src="img/header-logo_img2.svg" alt="Картинка">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regis__shop-item">
+                            <div class="regis__shop-item_header">
+                                <h3 class="regis__shop-caption">Домикс «Сити Молл»</h3>
+                                <p class="regis__shop-text">11 ноября,<span>бесплатно</span></p>
+                            </div>
+                            <div class="regis__shop-item_body">
+                                <div class="regis__shop-position_address">
+                                    <div class="me-auto">
+                                        <p class="regis__shop-address">Югорский тракт, 38 (ТРЦ «Сургут Сити Молл»)</p>
+                                        <div class="regis__shop-position_time">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 15.5C3.85775 15.5 0.5 12.1423 0.5 8C0.5 3.85775 3.85775 0.5 8 0.5C12.1423 0.5 15.5 3.85775 15.5 8C15.5 12.1423 12.1423 15.5 8 15.5ZM8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM8.75 8H11.75V9.5H7.25V4.25H8.75V8Z" fill="#16A471"/>
+                                            </svg>
+                                            <p class="regis__shop-time">Ежедневно с 10:00 до 22:00</p>
+                                        </div>
+                                    </div>
+                                    <img src="img/header-logo_img2.svg" alt="Картинка">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn regis__shop-item_btn" data-toggle="modal" data-target="#modalMap">Все пункты самовывоза на карте</button>
+                    </div>
+                </section>
+                <section class="regis__step-1">
+                    <div class="regis__step_caption-block">
+                        <span class="regis__step-number">3</span>
+                        <p class="regis__step_caption">Дата и время</p>
+                    </div>
+                    <div class="regis__date-block">
+                        <p class="regis__step-subtitle">Дата доставки</p>
+                        <select class="js-example-basic-single" name="state">
+                            <option value="Сегодня, 10 ноября">Сегодня, 10 ноября</option>
+                            <option value="Завтра, 11 ноября">Завтра, 11 ноября</option>
+                        </select>
+                    </div>
+                </section>
+                <section class="regis__step-1">
+                    <div class="regis__step_caption-block">
+                        <span class="regis__step-number">4</span>
+                        <p class="regis__step_caption">Способ оплаты</p>
+                    </div>
+                    <div class="regis__block-pay">
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="card2" name="color">
+                            <label for="card2">Картой на сайте</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/МИР.svg" alt="Мир">
+                                <img class="regis__block__img" src="img/Visa.svg" alt="Виза">
+                                <img class="regis__block__img" src="img/Mastercard.svg" alt="Мастеркард">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="wallet2" name="color">
+                            <label for="wallet2">Водителю наличными</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/wallet.svg" alt="кошелёк">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="cardDriver3" name="color">
+                            <label for="cardDriver3">Водителю картой</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/purchase.svg" alt="Карта">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="doli4" name="color">
+                            <label for="doli4">Долями</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/svgexport.svg" alt="Долями">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="apple5" name="color">
+                            <label for="apple5">Apple Pay</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/apple.PNG" alt="Apple Pay">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="google6" name="color">
+                            <label for="google6">Google Pay</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/Google_Pay.svg" alt="google">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="regis__steps wrapper__content-delivery" data-tab-content="post">
+            <div class="position-wrapper-steps">
+                <section class="regis__step-1">
+                    <div class="regis__step_caption-block">
+                        <span class="regis__step-number">1</span>
+                        <p class="regis__step_caption">Получатель</p>
+                    </div>
+                    <div class="wrapper-block regis__wrapper-block">
+                        <button data-tab="individual" class="btn wrapper__btn active">Физическое лицо</button>
+                        <button data-tab="legal" class="btn wrapper__btn">Юридическое лицо</button>
+                    </div>
+                    <div data-tab-content="individual" class="wrapper__content regis__individual active">
+                        <div class="form-floating regis__input-block">
+                            <input type="text" class="form-control regis__input" id="floatingInput30" placeholder="Имя и Фамилия">
+                            <label class="regis__label" for="floatingInput30">Имя и Фамилия</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="email" class="form-control regis__input" id="floatingInput31" placeholder="Электронная почта">
+                            <label class="regis__label" for="floatingInput31">Электронная почта</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="tel" class="form-control regis__input input__tel" id="floatingInput32" placeholder="Телефон">
+                            <label class="regis__label" for="floatingInput32">Телефон</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div data-tab-content="legal" class="wrapper__content regis__legal">
+                        <div class="form-floating regis__input-block">
+                            <input type="text" class="form-control regis__input" id="floatingInput33" placeholder="Имя и Фамилия">
+                            <label class="regis__label" for="floatingInput33">Имя и Фамилия</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="email" class="form-control regis__input" id="floatingInput34" placeholder="Электронная почта">
+                            <label class="regis__label" for="floatingInput34">Электронная почта</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="tel" class="form-control regis__input input__tel" id="floatingInput35" placeholder="Телефон">
+                            <label class="regis__label" for="floatingInput35">Телефон</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="number" class="form-control regis__input" id="floatingInput36" placeholder="ИНН">
+                            <label class="regis__label" for="floatingInput36">ИНН</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form-floating regis__input-block">
+                            <input type="text" class="form-control regis__input" id="floatingInput37" placeholder="Название организации">
+                            <label class="regis__label" for="floatingInput8">Название организации</label>
+                            <button type="reset" class="btn clear__input">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="regis__form_btn-add">
+                            <button type="button" class="btn regis__btn-add btn_red">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.075 14.1751L9.82502 2.92514C7.95002 0.975138 4.87502 0.975138 2.92502 2.85014C0.975024 4.72514 0.975024 7.87514 2.92502 9.75014L3.00002 9.82514L5.10002 12.0001L6.15002 10.9501L3.97502 8.77514C2.70002 7.50014 2.70002 5.32514 3.97502 4.05014C5.25002 2.77514 7.42502 2.70014 8.70002 3.97514C8.70002 3.97514 8.70002 3.97514 8.77502 4.05014L19.95 15.2251C21.3 16.5001 21.3 18.6751 20.025 19.9501C18.75 21.3001 16.575 21.3001 15.3 20.0251C15.3 20.0251 15.3 20.0251 15.225 19.9501L9.67502 14.4001C8.92502 13.6501 9.00002 12.4501 9.67502 11.7751C10.425 11.1001 11.55 11.1001 12.3 11.7751L15.375 14.8501L16.425 13.8001L13.275 10.6501C11.925 9.37514 9.82502 9.45014 8.55002 10.8001C7.35002 12.0751 7.35002 14.1001 8.55002 15.4501L14.175 21.0751C16.05 23.0251 19.125 23.0251 21.075 21.1501C23.025 19.2751 23.025 16.1251 21.075 14.1751Z" fill="white"/>
+                                </svg>
+                                Прикрепить реквизиты</button>
+                            <p class="regis__btn-add_lower-text">
+                                Формат .pdf Максимальный размер файла: 2Mb
+                            </p>
+                            <div class="regis__files-block">
+                                <p class="regis__files-caption">document.pdf</p>
+                                <button type="button" class="btn regis__files-delete">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1.05L10.95 0L6 4.95L1.05 0L0 1.05L4.95 6L0 10.95L1.05 12L6 7.05L10.95 12L12 10.95L7.05 6L12 1.05Z" fill="#242424"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="regis__step-1">
+                    <div class="regis__step_caption-block">
+                        <span class="regis__step-number">2</span>
+                        <p class="regis__step_caption">Адрес доставки</p>
+                    </div>
+                    <div class="form-floating regis__input-block">
+                        <input type="text" name="address" class="form-control regis__input" id="address" placeholder="Название организации">
+                        <label class="regis__label" for="address">Введите адрес доставки</label>
+                        <button type="reset" class="btn clear__input">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <div id="map2" class="map__delivery"></div>
+                        <button type="button" class="btn regis__shop-item_btn map__select-modile-btn" data-toggle="modal" data-target="#modalMapMobile">Указать точку на карте</button>
+                    </div>
+                    <div class="form-floating regis__input-block">
+                        <input type="tel" class="form-control regis__input input__tel" id="floatingInput39" placeholder="Название организации">
+                        <label class="regis__label" for="floatingInput39">Телефон мастера</label>
+                        <button type="reset" class="btn clear__input">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="14.0021" height="14.0025" rx="7.00105" fill="#F5F4F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00127 7.70838L9.29499 10.0021L10.0021 9.29499L7.70838 7.00127L10.0021 4.70756L9.29499 4.00045L7.00127 6.29417L4.70711 4L4 4.70711L6.29417 7.00127L4 9.29544L4.70711 10.0025L7.00127 7.70838Z" fill="#C4C4C4"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="form-check block__comments block__commentsDriver" onclick="viewCommentsDrpost()">
+                        <div class="catalog-filtr-checkbox">
+                            <input type="checkbox" id="catalog-filtr-ch14">
+                            <label class="form-check-label" for="catalog-filtr-ch14">Добавить комментарий водителю</label>
+                        </div>
+                    </div>
+                    <div class="regis__textarea-block" id="commentsDriver4">
+                        <div class="form-group">
+                            <textarea placeholder="Комментарий к услуге" class="form-control" id="exampleFormControlTextarea3" rows="10"></textarea>
+                        </div>
+                    </div>
+                </section>
+                <section class="regis__step-1">
+                    <div class="regis__step_caption-block">
+                        <span class="regis__step-number">3</span>
+                        <p class="regis__step_caption">Способ оплаты</p>
+                    </div>
+                    <div class="regis__block-pay">
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="card3" name="color">
+                            <label for="card3">Картой на сайте</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/МИР.svg" alt="Мир">
+                                <img class="regis__block__img" src="img/Visa.svg" alt="Виза">
+                                <img class="regis__block__img" src="img/Mastercard.svg" alt="Мастеркард">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="wallet3" name="color">
+                            <label for="wallet3">Водителю наличными</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/wallet.svg" alt="кошелёк">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="cardDriver33" name="color">
+                            <label for="cardDriver33">Водителю картой</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/purchase.svg" alt="Карта">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="doli3" name="color">
+                            <label for="doli3">Долями</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/svgexport.svg" alt="Долями">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="apple3" name="color">
+                            <label for="apple3">Apple Pay</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/apple.PNG" alt="Apple Pay">
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio pay-radio" type="radio" id="google3" name="color">
+                            <label for="google3">Google Pay</label>
+                            <div class="position__img">
+                                <img class="regis__block__img" src="img/Google_Pay.svg" alt="google">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <div class="receipt_sidebar-sticky">
+            <div class="sidebar__inner">
+                <div class="receipt__block">
+                    <div class="receipt__price-block">
+                        <p class="receipt__tittle">Ваш заказ</p>
+                        <div class="receipt__count-products-block">
+                            <p class="receipt__count">10 товаров</p>
+                            <p class="receipt__weight">80 кг</p>
+                            <p class="receipt__first-price">4 187 ₽</p>
+                        </div>
+                        <div class="receipt__sale-block">
+                            <button class="btn promocode__delete-btn">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 0.875L9.125 0L5 4.125L0.875 0L0 0.875L4.125 5L0 9.125L0.875 10L5 5.875L9.125 10L10 9.125L5.875 5L10 0.875Z" fill="#242424"/>
+                                </svg>
+                            </button>
+                            <p class="receipt__promo">Промокод SALE2020</p>
+                            <p class="receipt__sale-price"> – 1 000 ₽</p>
+                        </div>
+                        <div class="receipt__sale-block">
+                            <button class="btn promocode__delete-btn">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 0.875L9.125 0L5 4.125L0.875 0L0 0.875L4.125 5L0 9.125L0.875 10L5 5.875L9.125 10L10 9.125L5.875 5L10 0.875Z" fill="#242424"/>
+                                </svg>
+                            </button>
+                            <p class="receipt__promo">Промокод New</p>
+                            <p class="receipt__sale-price"> – 1 000 ₽</p>
+                        </div>
+                        <div class="receipt__delivery-block">
+                            <p class="receipt__delivery">Доставка</p>
+                            <p class="receipt__delivery-price">Бесплатно</p>
+                        </div>
+                        <div class="receipt__total-price-block">
+                            <p class="receipt__text">Итого</p>
+                            <p class="receipt__price">2 187 ₽</p>
+                        </div>
+                        <div class="receipt__form">
+                            <input class="receipt__form-input" type="text" placeholder="Введите промокод">
+                            <button class="btn receipt__form-btn">Применить</button>
+                        </div>
+                    </div>
+                    <button class="btn receipt__registration-btn btn_red">Оформить заказ</button>
+                    <p class="receipt__registration-policy">
+                        Нажимая на кнопку «Оформить заказ» вы соглашаетесь на обработку и хранение персональных данных в соответствии <a href="#">с политикой конфиденциальности</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<section class="margin-item">
+</section>
+
+
+<!-- Modal карты -->
+<div class="modal fade map__modal" id="modalMap" tabindex="-1" role="dialog" aria-labelledby="modalMap" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button class="close map__modal-close" data-dismiss="modal" aria-label="Close">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1.05L10.95 0L6 4.95L1.05 0L0 1.05L4.95 6L0 10.95L1.05 12L6 7.05L10.95 12L12 10.95L7.05 6L12 1.05Z" fill="#242424"/>
+                </svg>
+            </button>
+            <div class="modal-header">
+                <div class="position__mobile-btn">
+                    <button class="map__switch-btn switch-on" id="listBtn">Списком</button>
+                    <button class="btn_red map__switch-btn" id="mapBtn">На карте</button>
+                </div>
+                <h5 class="cart__modal-title">Список пунктов</h5>
+            </div>
+            <div class="modal-body map__modal-body">
+                <div id="map3" class="map map3">
+                    <div class="map__modal-list shop__list" id="list">
+                        <button class="btn shop__item-link">Назад к списку</button>
+                        <h2 class="map__modal-tittle">Список пунктов</h2>
+                        <div class="map__modal-item" data-objectid="1">
+                            <div class="regis__shop-item_header">
+                                <p class="regis__shop-text">11 ноября,<span>бесплатно</span></p>
+                                <h3 class="regis__shop-caption">Домикс «Сити Молл»</h3>
+                            </div>
+                            <div class="regis__shop-item_body">
+                                <div class="regis__shop-position_address">
+                                    <div class="me-auto">
+                                        <p class="regis__shop-address">Югорский тракт, 38 (ТРЦ «Сургут Сити Молл»)</p>
+                                        <div class="open__shop-modal-block-links">
+                                            <a href="tel:">8 364 31 07 28</a>
+                                            <a href="mailto:">surgut@domix-club.ru</a>
+                                        </div>
+                                        <div class="regis__shop-position_time">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 15.5C3.85775 15.5 0.5 12.1423 0.5 8C0.5 3.85775 3.85775 0.5 8 0.5C12.1423 0.5 15.5 3.85775 15.5 8C15.5 12.1423 12.1423 15.5 8 15.5ZM8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM8.75 8H11.75V9.5H7.25V4.25H8.75V8Z" fill="#16A471"/>
+                                            </svg>
+                                            <p class="regis__shop-time">Ежедневно с 10:00 до 22:00</p>
+                                        </div>
+                                        <button class="btn open__shop-modal-btn modal-list-btn btn_red">Выбрать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map__modal-item" data-objectid="2">
+                            <div class="regis__shop-item_header">
+                                <p class="regis__shop-text">11 ноября,<span>бесплатно</span></p>
+                                <h3 class="regis__shop-caption">Домикс «Сити Молл»</h3>
+                            </div>
+                            <div class="regis__shop-item_body">
+                                <div class="regis__shop-position_address">
+                                    <div class="me-auto">
+                                        <p class="regis__shop-address">Югорский тракт, 38 (ТРЦ «Сургут Сити Молл»)</p>
+                                        <div class="open__shop-modal-block-links">
+                                            <a href="tel:">8 364 31 07 28</a>
+                                            <a href="mailto:">surgut@domix-club.ru</a>
+                                        </div>
+                                        <div class="regis__shop-position_time">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 15.5C3.85775 15.5 0.5 12.1423 0.5 8C0.5 3.85775 3.85775 0.5 8 0.5C12.1423 0.5 15.5 3.85775 15.5 8C15.5 12.1423 12.1423 15.5 8 15.5ZM8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM8.75 8H11.75V9.5H7.25V4.25H8.75V8Z" fill="#16A471"/>
+                                            </svg>
+                                            <p class="regis__shop-time">Ежедневно с 10:00 до 22:00</p>
+                                        </div>
+                                        <button class="btn open__shop-modal-btn modal-list-btn btn_red">Выбрать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map__modal-item" data-objectid="3">
+                            <div class="regis__shop-item_header">
+                                <p class="regis__shop-text">11 ноября,<span>бесплатно</span></p>
+                                <h3 class="regis__shop-caption">Домикс «Сити Молл»</h3>
+                            </div>
+                            <div class="regis__shop-item_body">
+                                <div class="regis__shop-position_address">
+                                    <div class="me-auto">
+                                        <p class="regis__shop-address">Югорский тракт, 38 (ТРЦ «Сургут Сити Молл»)</p>
+                                        <div class="open__shop-modal-block-links">
+                                            <a href="tel:">8 364 31 07 28</a>
+                                            <a href="mailto:">surgut@domix-club.ru</a>
+                                        </div>
+                                        <div class="regis__shop-position_time">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 15.5C3.85775 15.5 0.5 12.1423 0.5 8C0.5 3.85775 3.85775 0.5 8 0.5C12.1423 0.5 15.5 3.85775 15.5 8C15.5 12.1423 12.1423 15.5 8 15.5ZM8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM8.75 8H11.75V9.5H7.25V4.25H8.75V8Z" fill="#16A471"/>
+                                            </svg>
+                                            <p class="regis__shop-time">Ежедневно с 10:00 до 22:00</p>
+                                        </div>
+                                        <button class="btn open__shop-modal-btn modal-list-btn btn_red">Выбрать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map__modal-item" data-objectid="4">
+                            <div class="regis__shop-item_header">
+                                <p class="regis__shop-text">11 ноября,<span>бесплатно</span></p>
+                                <h3 class="regis__shop-caption">Домикс «Сити Молл»</h3>
+                            </div>
+                            <div class="regis__shop-item_body">
+                                <div class="regis__shop-position_address">
+                                    <div class="me-auto">
+                                        <p class="regis__shop-address">Югорский тракт, 38 (ТРЦ «Сургут Сити Молл»)</p>
+                                        <div class="open__shop-modal-block-links">
+                                            <a href="tel:">8 364 31 07 28</a>
+                                            <a href="mailto:">surgut@domix-club.ru</a>
+                                        </div>
+                                        <div class="regis__shop-position_time">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 15.5C3.85775 15.5 0.5 12.1423 0.5 8C0.5 3.85775 3.85775 0.5 8 0.5C12.1423 0.5 15.5 3.85775 15.5 8C15.5 12.1423 12.1423 15.5 8 15.5ZM8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM8.75 8H11.75V9.5H7.25V4.25H8.75V8Z" fill="#16A471"/>
+                                            </svg>
+                                            <p class="regis__shop-time">Ежедневно с 10:00 до 22:00</p>
+                                        </div>
+                                        <button class="btn open__shop-modal-btn modal-list-btn btn_red">Выбрать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map__modal-item" data-objectid="5">
+                            <div class="regis__shop-item_header">
+                                <p class="regis__shop-text">11 ноября,<span>бесплатно</span></p>
+                                <h3 class="regis__shop-caption">Домикс «Сити Молл»</h3>
+                            </div>
+                            <div class="regis__shop-item_body">
+                                <div class="regis__shop-position_address">
+                                    <div class="me-auto">
+                                        <p class="regis__shop-address">Югорский тракт, 38 (ТРЦ «Сургут Сити Молл»)</p>
+                                        <div class="open__shop-modal-block-links">
+                                            <a href="tel:">8 364 31 07 28</a>
+                                            <a href="mailto:">surgut@domix-club.ru</a>
+                                        </div>
+                                        <div class="regis__shop-position_time">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 15.5C3.85775 15.5 0.5 12.1423 0.5 8C0.5 3.85775 3.85775 0.5 8 0.5C12.1423 0.5 15.5 3.85775 15.5 8C15.5 12.1423 12.1423 15.5 8 15.5ZM8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM8.75 8H11.75V9.5H7.25V4.25H8.75V8Z" fill="#16A471"/>
+                                            </svg>
+                                            <p class="regis__shop-time">Ежедневно с 10:00 до 22:00</p>
+                                        </div>
+                                        <button class="btn open__shop-modal-btn modal-list-btn btn_red">Выбрать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade map__modal" id="modalMapMobile" tabindex="-1" role="dialog" aria-labelledby="modalMap" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close map__modal-close" data-dismiss="modal" aria-label="Close">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1.05L10.95 0L6 4.95L1.05 0L0 1.05L4.95 6L0 10.95L1.05 12L6 7.05L10.95 12L12 10.95L7.05 6L12 1.05Z" fill="#242424"/>
+                </svg>
+            </button>
+            <div class="modal-header">
+                <h5 class="cart__modal-title">Выбрать адрес на карте</h5>
+            </div>
+            <div class="modal-body">
+                <div id="map1" class="map">
+                </div>
+                <div class="position__address-modal-block">
+                    <button type="button" class="close map__modal-close" id="modalSelect">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 1.05L10.95 0L6 4.95L1.05 0L0 1.05L4.95 6L0 10.95L1.05 12L6 7.05L10.95 12L12 10.95L7.05 6L12 1.05Z" fill="#242424"/>
+                        </svg>
+                    </button>
+                    <p class="input-addres-modal" id="addressMobile"></p>
+                    <button class="btn open__shop-modal-btn btn_red" type="button" data-dismiss="modal" aria-label="Close">Выбрать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+//= template/footer-yellow.html
+<!--<script src="js/partials/registerMap.js"></script>-->
+<script>
+    function viewUnloading(){
+        $("#unloading").toggleClass('active-comments');
+        $("#unloading").parent().parent().toggleClass("active-unloading")
+        if ($(".more").hasClass("active-comments")){
+            $(".more").removeClass('active-comments')
+        }else {
+            $(".more").addClass('active-comments')
+        }
+    };
+
+    function viewRise(){
+        $("#rise").parent().parent().toggleClass("active-unloading");
+        $("#rise").toggleClass("active-floor");
+        $('.regis__warning-block').toggleClass('regis__warning-block-active')
+    };
+
+    function viewComments(){
+        $("#comments").toggleClass('active-comments');
+    };
+
+    function viewCommentsDr(){
+        $("#commentsDriver3").toggleClass('active-comments');
+    };
+
+
+    function viewCommentsDrpost(){
+        $("#commentsDriver4").toggleClass('active-comments');
+    };
+
+    function viewMeters(){
+        $("#meters").toggleClass('active-meters');
+    };
+
+    function windowSize(){
+        if ($(window).width() <= '767'){
+            $('#map3').attr('id','map4')
+        }
+    }
+
+    $(window).on('load resize',windowSize);
+
+    ymaps.ready(init);
+
+    function init(){
+        var  myInput = document.getElementById("address")
+        var  myInput2 = document.getElementById("addressMobile"),
+            myPlacemark,
+            myMap2,
+            myMap = new ymaps.Map('map', {
+                center: [55.753994, 37.622093],
+                zoom: 9,
+                controls:[]
+            },{
+                suppressMapOpenBlock: true
+            });
+        myMap2 = new ymaps.Map('map1', {
+            center: [55.753994, 37.622093],
+            zoom: 9,
+            controls:[]
+        },{
+            suppressMapOpenBlock: true
+        });
+
+        $('#modalSelect').click(function(){
+            $('.position__address-modal-block').removeClass('active_mobile-modal-address');
+        });
+
+        var myMapSecond = new ymaps.Map("map2", {
+            center: [55.75846306898368,37.601079499999905],
+            zoom: 15,
+            controls:[]
+        });
+        myMap.events.add('click', function (e) {
+            var coords = e.get('coords');
+
+            // Если метка уже создана – просто передвигаем ее.
+            if (myPlacemark) {
+                myPlacemark.geometry.setCoordinates(coords);
+            }
+            // Если нет – создаем.
+            else {
+                myPlacemark = createPlacemark(coords);
+                myMap.geoObjects.add(myPlacemark);
+                $('.position__address-modal-block').addClass('active_mobile-modal-address');
+                // Слушаем событие окончания перетаскивания на метке.
+                myPlacemark.events.add('dragend', function () {
+                    getAddress(myPlacemark.geometry.getCoordinates());
+                });
+            }
+            getAddress(coords);
+        });
+
+        myMap2.events.add('click', function (e) {
+            var coords = e.get('coords');
+
+            // Если метка уже создана – просто передвигаем ее.
+            if (myPlacemark) {
+                myPlacemark.geometry.setCoordinates(coords);
+                $('.position__address-modal-block').addClass('active_mobile-modal-address');
+            }
+            // Если нет – создаем.
+            else {
+                myPlacemark = createPlacemark(coords);
+                myMap2.geoObjects.add(myPlacemark);
+                $('.position__address-modal-block').addClass('active_mobile-modal-address');
+                // Слушаем событие окончания перетаскивания на метке.
+                myPlacemark.events.add('dragend', function () {
+                    getAddress(myPlacemark.geometry.getCoordinates());
+                });
+            }
+            getAddress(coords);
+        });
+
+
+        // Создание метки.
+        function createPlacemark(coords) {
+            return new ymaps.Placemark(coords, {
+                iconCaption: 'поиск...'
+            }, {
+                iconLayout: 'default#imageWithContent',
+                // Своё изображение иконки метки.
+                iconImageHref: '../build/img/map-clickl-marcker-yellow.svg',
+                // Размеры метки.
+                iconImageSize: [35, 43],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-20, -45],
+                // Смещение слоя с содержимым относительно слоя с картинкой.
+                iconContentOffset: [0, 0],
+            });
+        }
+
+        // Определяем адрес по координатам (обратное геокодирование).
+        function getAddress(coords) {
+            myPlacemark.properties.set('iconCaption', 'поиск...');
+            ymaps.geocode(coords).then(function (res) {
+                var firstGeoObject = res.geoObjects.get(0),
+                    address = firstGeoObject.getAddressLine();
+
+                myPlacemark.properties
+                    .set({
+                        // Формируем строку с данными об объекте.
+                        iconCaption: [
+                            // Название населенного пункта или вышестоящее административно-территориальное образование.
+                            firstGeoObject.getLocalities().length ? firstGeoObject.getLocalities() : firstGeoObject.getAdministrativeAreas(),
+                            // Получаем путь до топонима, если метод вернул null, запрашиваем наименование здания.
+                            firstGeoObject.getThoroughfare() || firstGeoObject.getPremise()
+                        ].filter(Boolean).join(', '),
+                        // В качестве контента балуна задаем строку с адресом объекта.
+                        balloonContent: address
+                    });
+                myInput.value = address;
+                myInput2.innerHTML = address;
+                myMap.setCenter(coords, 9, {
+                    checkZoomRange: true
+                })
+                myMap2.setCenter(coords, 9, {
+                    checkZoomRange: true
+                })
+            });
+        }
+
+    }
+
+
+    ymaps.ready(addAddressMobile);
+    function addAddressMobile() {
+        var mapPin = '../build/img/map_pin-yellow.svg';
+        var mapPinHover = '../build/img/map_pin-hover-yellow.svg';
+        var mapPinActive = '../build/img/map_pin-active-yellow.svg';
+        var myMap = new ymaps.Map('map3', {
+            center: [-33.867861, -63.988028],
+            zoom: 18,
+            controls: []
+        }, {
+            suppressMapOpenBlock: true,
+        });
+        objectManager = new ymaps.ObjectManager({
+            clusterize: true,
+            gridSize: 32
+        });
+        // myMap.geoObjects.add(objectManager);
+        objectManager.objects.options.set('iconLayout', 'default#image');
+        objectManager.objects.options.set('iconImageHref', mapPin);
+        objectManager.objects.options.set('hideIconOnBalloonOpen', false);
+        objectManager.objects.options.set('balloonOffset', [0, -40]);
+        // Задаем наш шаблон для балунов геобъектов коллекции.
+        objectManager.add({
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "id": 1,
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [50.504268, 30.542315]
+                    }
+                }, {
+                    "type": "Feature",
+                    "id": 2,
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-33.867861, -63.988028]
+                    },
+                }, {
+                    "type": "Feature",
+                    "id": 3,
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [50.813802, -2.475569]
+                    }
+                }
+            ]
+        });
+        /* 2. Обработка списка и меток */
+        //Клик по метке в карте
+        // myMap.geoObjects.events.add('mouseenter', function (e) {
+        //     objectManager.objects.setObjectOptions(e.get('objectId'), {
+        //         iconLayout: 'default#image',
+        //         iconImageHref: mapPinHover,
+        //         iconImageSize: [30, 44],
+        //     });
+        // })
+        //
+        // myMap.geoObjects.events.add('mouseleave', function (e) {
+        //     objectManager.objects.setObjectOptions(e.get('objectId'), {
+        //         iconLayout: 'default#image',
+        //         iconImageHref: mapPin,
+        //         iconImageSize: [30, 44],
+        //     });
+        // })
+        //
+        // objectManager.objects.events.add('click', function (e) {
+        //     if (!e.originalEvent.currentTarget.balloon.isOpen()){
+        //         myMap.geoObjects.events.add('mouseleave', function (e) {
+        //             objectManager.objects.setObjectOptions(e.get('objectId'), {
+        //                 iconLayout: 'default#image',
+        //                 iconImageHref: mapPin,
+        //                 iconImageSize: [30, 44],
+        //             });
+        //         })
+        //     } else {
+        //         myMap.geoObjects.events.add('mouseleave', function (e) {
+        //             objectManager.objects.setObjectOptions(e.get('objectId'), {
+        //                 iconLayout: 'default#image',
+        //                 iconImageHref: mapPinActive,
+        //                 iconImageSize: [30, 44],
+        //             });
+        //         })
+        //     }
+        // })
+
+        objectManager.objects.events.add('click', function (e) {
+            var objectId=e.get('objectId');
+            if (!e.originalEvent.currentTarget.balloon.isOpen()){
+                e.originalEvent.currentTarget.balloon.close()
+            } else {
+                //само откроется
+            }
+
+            if ($(window).width() >= '767'){
+                if (!e.originalEvent.currentTarget.balloon.isOpen()){
+                    e.originalEvent.currentTarget.balloon.close()
+                    $('[data-objectId]').addClass('active-map-items');
+                    $('[data-objectId='+objectId+']').removeClass('active-map-items');
+                    $('.shop__list').removeClass('map-active-list')
+                } else {
+                    $('[data-objectId]').removeClass('active-map-items');
+                    $('[data-objectId='+objectId+']').addClass('active-map-items');
+                    $('.shop__list').addClass('map-active-list')
+                    //само откроется
+                }
+            }
+
+        });
+
+
+        myMap.geoObjects.events.add('balloonclose', function (e) {
+            objectManager.objects.setObjectOptions(e.get('objectId'), {
+                iconLayout: 'default#image',
+                iconImageHref: mapPin,
+                iconImageSize: [30, 44],
+            });
+        });
+
+        myMap.geoObjects.events.add('balloonopen', function (e) {
+            objectManager.objects.setObjectOptions(e.get('objectId'), {
+                iconLayout: 'default#image',
+                iconImageHref: mapPinActive,
+                iconImageSize: [30, 44],
+            });
+        });
+        //Клик в списке
+        [].forEach.call(document.querySelectorAll('[data-objectId]'), function(el) {
+            el.addEventListener('click', function() {
+                var objectId=el.getAttribute("data-objectId");
+                $('.map__modal-item').addClass('disabled-map-items');
+                // objectManager.objects.options.set('iconImageHref', '../build/img/map_pin-red.svg');
+                viewObject(objectId);
+            });
+        });
+
+        $('.shop__item-link').click(function (item) {
+            $('.shop__list').removeClass('map-active-list');
+            $('.map__modal-item').removeClass('disabled-map-items active-map-items active')
+        })
+        // Что происходит при выборе метки или варианта из списка
+        function viewObject(objectId){
+            // Удаляем со всего списка класс active затем добавляем к выбранному
+            $('[data-objectId]').removeClass('active-map-items');
+            $('[data-objectId='+objectId+']').addClass('active-map-items');
+            $('.shop__list').addClass('map-active-list')
+            // Выделяем все метки в синий, затем выбранную в красную
+            objectManager.objects.each(function (item) {
+                objectManager.objects.setObjectOptions(item.id, {
+                    iconLayout: 'default#image',
+                    iconImageHref: mapPin,
+                    iconImageSize: [30, 44],
+                    iconImageOffset: [-15, -44]
+                });
+            });
+            objectManager.objects.setObjectOptions(objectId, {
+                iconLayout: 'default#image',
+                iconImageHref: mapPinActive,
+                iconImageSize: [30, 44],
+                iconImageOffset: [-15, -44]
+            });
+            // Центрирование по метке
+            myMap.setCenter(objectManager.objects.getById(objectId).geometry.coordinates, 18, {
+                checkZoomRange: true
+            });
+        }
+
+        myMap.geoObjects.add(objectManager);
+
+    }
+
+    ymaps.ready(map4);
+    function map4(){
+        var mapPin = '../build/img/map_pin-yellow.svg';
+        var mapPinHover = '../build/img/map_pin-hover-yellow.svg';
+        var mapPinActive = '../build/img/map_pin-active-yellow.svg';
+        var myMap = new ymaps.Map('map4', {
+            center: [50.813802, -2.475569],
+            zoom: 12,
+            controls:[]
+        },{
+            suppressMapOpenBlock: true,
+        });
+        objectManager = new ymaps.ObjectManager({
+            clusterize: true,
+            gridSize: 32
+        });
+        myMap.geoObjects.add(objectManager);
+        objectManager.objects.options.set('iconLayout', 'default#image');
+        objectManager.objects.options.set('iconImageHref', mapPin);
+        objectManager.objects.options.set('hideIconOnBalloonOpen', false);
+        objectManager.objects.options.set('balloonOffset', [0, -40]);
+        // Задаем наш шаблон для балунов геобъектов коллекции.
+        myMap.geoObjects.add(objectManager);
+        objectManager.add({
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "id":1,
+                    "geometry":{
+                        "type": "Point",
+                        "coordinates":[50.504268, 30.542315]
+                    },
+                    "properties":{
+                        "balloonContentBody": ['<div class="map__modal-list shop__item map__modal-balloon-item" id="shop__item" >\n' +
+                        '                        <button class="btn shop__item-link" id="backList">Назад к списку</button>\n' +
+                        '                        <div class="map__modal-item">\n' +
+                        '                            <div class="regis__shop-item_header">\n' +
+                        '                                <p class="regis__shop-text">11 ноября,<span>бесплатно</span></p>\n' +
+                        '                                <h3 class="regis__shop-caption">Домикс «Сити Молл»</h3>\n' +
+                        '                            </div>\n' +
+                        '                            <div class="regis__shop-item_body">\n' +
+                        '                                <div class="regis__shop-position_address">\n' +
+                        '                                    <div class="me-auto">\n' +
+                        '                                        <p class="regis__shop-address">Югорский тракт, 38 (ТРЦ «Сургут Сити Молл»)</p>\n' +
+                        '                                        <a href="tel:">8 364 31 07 28</a>\n' +
+                        '                                        <a href="mailto:">surgut@domix-club.ru</a>\n' +
+                        '                                        <div class="regis__shop-position_time">\n' +
+                        '                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+                        '                                                <path d="M8 15.5C3.85775 15.5 0.5 12.1423 0.5 8C0.5 3.85775 3.85775 0.5 8 0.5C12.1423 0.5 15.5 3.85775 15.5 8C15.5 12.1423 12.1423 15.5 8 15.5ZM8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM8.75 8H11.75V9.5H7.25V4.25H8.75V8Z" fill="#858585"/>\n' +
+                        '                                            </svg>\n' +
+                        '                                            <p class="regis__shop-time">Ежедневно с 10:00 до 22:00</p>\n' +
+                        '                                        </div>\n' +
+                        '                                    </div>\n' +
+                        '                                </div>\n' +
+                        '                            </div>\n' +
+                        '                            <button class="btn open__shop-modal-btn btn_red">Выбрать</button>\n' +
+                        '                        </div>\n' +
+                        '                    </div>',
+
+                        ].join(""),
+                        "iconCaption": 'Домикс «Сити Молл»'
+                    }
+                },{
+                    "type": "Feature",
+                    "id":2,
+                    "geometry":{
+                        "type": "Point",
+                        "coordinates":[-33.867861, -63.988028]
+                    },
+                    "properties":{
+                        "balloonContent": '<div class="map__modal-list shop__item map__modal-balloon-item" id="shop__item" >\n' +
+                            '                        <button class="btn shop__item-link" id="backList">Назад к списку</button>\n' +
+                            '                        <div class="map__modal-item">\n' +
+                            '                            <div class="regis__shop-item_header">\n' +
+                            '                                <p class="regis__shop-text">11 ноября,<span>бесплатно</span></p>\n' +
+                            '                                <h3 class="regis__shop-caption">Домикс «Сити Молл»</h3>\n' +
+                            '                            </div>\n' +
+                            '                            <div class="regis__shop-item_body">\n' +
+                            '                                <div class="regis__shop-position_address">\n' +
+                            '                                    <div class="me-auto">\n' +
+                            '                                        <p class="regis__shop-address">Югорский тракт, 38 (ТРЦ «Сургут Сити Молл»)</p>\n' +
+                            '                                        <a href="tel:">8 364 31 07 28</a>\n' +
+                            '                                        <a href="mailto:">surgut@domix-club.ru</a>\n' +
+                            '                                        <div class="regis__shop-position_time">\n' +
+                            '                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+                            '                                                <path d="M8 15.5C3.85775 15.5 0.5 12.1423 0.5 8C0.5 3.85775 3.85775 0.5 8 0.5C12.1423 0.5 15.5 3.85775 15.5 8C15.5 12.1423 12.1423 15.5 8 15.5ZM8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM8.75 8H11.75V9.5H7.25V4.25H8.75V8Z" fill="#858585"/>\n' +
+                            '                                            </svg>\n' +
+                            '                                            <p class="regis__shop-time">Ежедневно с 10:00 до 22:00</p>\n' +
+                            '                                        </div>\n' +
+                            '                                    </div>\n' +
+                            '                                </div>\n' +
+                            '                            </div>\n' +
+                            '                            <button class="btn open__shop-modal-btn btn_red">Выбрать</button>\n' +
+                            '                        </div>\n' +
+                            '                    </div>',
+
+                        "iconCaption": "Домикс «Сити Молл»"
+                    }
+                },{
+                    "type": "Feature",
+                    "id":3,
+                    "geometry":{
+                        "type": "Point",
+                        "coordinates":[50.813802, -2.475569]
+                    },
+                    "properties":{
+                        "balloonContent": '<div class="map__modal-list shop__item map__modal-balloon-item" id="shop__item" >\n' +
+                            '                        <button class="btn shop__item-link" id="backList">Назад к списку</button>\n' +
+                            '                        <div class="map__modal-item">\n' +
+                            '                            <div class="regis__shop-item_header">\n' +
+                            '                                <p class="regis__shop-text">11 ноября,<span>бесплатно</span></p>\n' +
+                            '                                <h3 class="regis__shop-caption">Домикс «Сити Молл»</h3>\n' +
+                            '                            </div>\n' +
+                            '                            <div class="regis__shop-item_body">\n' +
+                            '                                <div class="regis__shop-position_address">\n' +
+                            '                                    <div class="me-auto">\n' +
+                            '                                        <p class="regis__shop-address">Югорский тракт, 38 (ТРЦ «Сургут Сити Молл»)</p>\n' +
+                            '                                        <a href="tel:">8 364 31 07 28</a>\n' +
+                            '                                        <a href="mailto:">surgut@domix-club.ru</a>\n' +
+                            '                                        <div class="regis__shop-position_time">\n' +
+                            '                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+                            '                                                <path d="M8 15.5C3.85775 15.5 0.5 12.1423 0.5 8C0.5 3.85775 3.85775 0.5 8 0.5C12.1423 0.5 15.5 3.85775 15.5 8C15.5 12.1423 12.1423 15.5 8 15.5ZM8 14C9.5913 14 11.1174 13.3679 12.2426 12.2426C13.3679 11.1174 14 9.5913 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8C2 9.5913 2.63214 11.1174 3.75736 12.2426C4.88258 13.3679 6.4087 14 8 14ZM8.75 8H11.75V9.5H7.25V4.25H8.75V8Z" fill="#858585"/>\n' +
+                            '                                            </svg>\n' +
+                            '                                            <p class="regis__shop-time">Ежедневно с 10:00 до 22:00</p>\n' +
+                            '                                        </div>\n' +
+                            '                                    </div>\n' +
+                            '                                </div>\n' +
+                            '                            </div>\n' +
+                            '                            <button class="btn open__shop-modal-btn btn_red">Выбрать</button>\n' +
+                            '                        </div>\n' +
+                            '                    </div>',
+
+                        "iconCaption": "Домикс «Сити Молл» 3"
+                    }
+                }
+            ]
+        });
+
+        $(document).on( "click", ".filters-more-items", function() {
+            // Определяем по какой метке произошло событие.
+            $('.position__filters-map').addClass("open__more-balun-active");
+            $(this).hide();
+        });
+
+
+        /* 2. Обработка списка и меток */
+        //Клик по метке в карте
+
+        objectManager.objects.events.add('click', function (e) {
+            var objectId=e.get('objectId');
+            if (!e.originalEvent.currentTarget.balloon.isOpen()){
+                e.originalEvent.currentTarget.balloon.close()
+            } else {
+                //само откроется
+
+                myMap.setCenter(objectManager.objects.getById(objectId).geometry.coordinates, 18, {
+                    checkZoomRange: true
+                });
+            }
+
+            if ($(window).width() >= '767'){
+                if (!e.originalEvent.currentTarget.balloon.isOpen()){
+                    e.originalEvent.currentTarget.balloon.close()
+                    $('[data-objectId]').addClass('active-map-items');
+                    $('[data-objectId='+objectId+']').removeClass('active-map-items');
+                    $('.shop__list').removeClass('map-active-list')
+                } else {
+                    $('[data-objectId]').removeClass('active-map-items');
+                    $('[data-objectId='+objectId+']').addClass('active-map-items');
+                    $('.shop__list').addClass('map-active-list')
+                    //само откроется
+                }
+            }
+
+        });
+
+
+        myMap.geoObjects.events.add('balloonclose', function (e) {
+            objectManager.objects.setObjectOptions(e.get('objectId'), {
+                iconLayout: 'default#image',
+                iconImageHref: mapPin,
+                iconImageSize: [30, 44],
+            });
+        });
+
+        myMap.geoObjects.events.add('balloonopen', function (e) {
+            objectManager.objects.setObjectOptions(e.get('objectId'), {
+                iconLayout: 'default#image',
+                iconImageHref: mapPinActive,
+                iconImageSize: [30, 44],
+            });
+        });
+        //Клик в списке
+        [].forEach.call(document.querySelectorAll('[data-objectId]'), function(el) {
+            el.addEventListener('click', function() {
+                var objectId=el.getAttribute("data-objectId");
+                viewObject(objectId);
+            });
+        });
+        // Что происходит при выборе метки или варианта из списка
+        function viewObject(objectId){
+            // Удаляем со всего списка класс active затем добавляем к выбранному
+            $('[data-objectId]').removeClass('active');
+            $('[data-objectId='+objectId+']').addClass('active');
+            // Выделяем все метки в синий, затем выбранную в красную
+            objectManager.objects.each(function (item) {
+                objectManager.objects.setObjectOptions(item.id, {
+                    iconLayout: 'default#image',
+                    iconImageHref: "../build/img/map_pin-red.svg",
+                    iconImageSize: [30, 44],
+                    iconImageOffset: [-15, -44]
+                });
+            });
+
+            myMap.geoObjects.events.add('balloonopen', function (e) {
+                objectManager.objects.setObjectOptions(objectId, {
+                    iconLayout: 'default#image',
+                    iconImageHref: "../build/img/map_pin.svg",
+                    iconImageSize: [30, 44],
+                    iconImageOffset: [-15, -44]
+                });
+            });
+            myMap.geoObjects.events.add('balloonclose', function (e) {
+                objectManager.objects.setObjectOptions(objectId, {
+                    iconLayout: 'default#image',
+                    iconImageHref: "../build/img/map_pin-red.svg",
+                    iconImageSize: [30, 44],
+                    iconImageOffset: [-15, -44]
+                });
+            });
+
+            myMap.events.add('click', function(){
+                myMap.behaviors.enable('scrollZoom')
+            })
+            // Центрирование по метке
+            myMap.setCenter(objectManager.objects.getById(objectId).geometry.coordinates, 18, {
+                checkZoomRange: true
+            });
+        }
+    }
+
+
+
+
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
