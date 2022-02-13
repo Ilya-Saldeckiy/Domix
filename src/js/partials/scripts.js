@@ -3241,6 +3241,23 @@ $(document).ready(function () {
         $('.shop__item-card-position').addClass('shop__item-card-position-opencard-mobile');
     })
 
+    $('.master__input-dropdown').hide();
+
+    $('.sity__input').on('click', function () {
+        $('.master__input-dropdown').show();
+        $(this).addClass('sity__input-active');
+    })
+
+    $(document).mouseup( function(e){ // событие клика по веб-документу
+        var div = $( ".master__input-dropdown" ); // тут указываем ID элемента
+        if ( !div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+            div.hide(); // скрываем его
+            $('.sity__input').removeClass('.sity__input-active')
+        }
+    });
+
+
 
 
 });
