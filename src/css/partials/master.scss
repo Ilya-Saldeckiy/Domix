@@ -233,12 +233,12 @@
   }
 
   & .simplebar-scrollbar:before {
-    background-color: #000;
+    background-color: #e1e1e1;
     opacity: 1!important;
   }
 
   & .simplebar-track.simplebar-vertical{
-    width: 10px;
+    width: 11px;
     right: 4px;
   }
 
@@ -272,5 +272,274 @@
     right: 0;
     background: url(../img/master__man-tablet.png) no-repeat;
   }
+
+}
+
+@media (max-width: 1024px) {
+  .master__page .master__description{
+    margin-bottom: 37px;
+  }
+
+  .master__page-steps_section ul li div{
+    width: 85px;
+    height: 85px;
+    border-width: 5px;
+  }
+
+  .master__page-steps_section ul li:not(:last-child):after{
+    right: -55px;
+  }
+
+  .master__page .master__checkist-block_caption{
+    width: 201px;
+  }
+
+  .master__page .master__checkist-block_form{
+    width: 615px;
+  }
+
+  .master__page-steps_section ul li{
+    margin-right: 110px;
+  }
+
+  .master__page .master__checkist-block_form .regis__input-block{
+    width: 311px;
+  }
+
+  .master__page .master__checkist-block_form .small__input{
+    width: 280px;
+  }
+
+  .master__page .form-check-label{
+    width: 247px;
+    margin-top: -3px;
+  }
+
+  .master__page .master__checkist-block_check-position-left{
+    width: 300px;
+  }
+
+  .master__page .master__checkist-block_btn-position .btn_red{
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: 980px) {
+
+  .master__page .master__description {
+    margin-bottom: 329px;
+  }
+
+  .master__page-steps_section ul{
+    position: relative;
+    top: -380px;
+    padding-left: 0;
+  }
+
+  .master__page-steps_section ul li div{
+    width: 70px;
+    height: 70px;
+    border-color: #F5F4F0;
+    margin-bottom: 16px;
+  }
+
+  .master__page-steps_section ul li p{
+    @include f_16_b;
+  }
+
+  .master__page-steps_section ul li{
+
+    &:not(:last-child){
+      margin-right: 55px;
+    }
+  }
+
+  .master__page-steps_section ul li:not(:last-child):after{
+    right: -25px;
+    top: 22px;
+  }
+
+  .master__page .master__checkist-block:after{
+    width: 282px;
+    height: 369px;
+    top: -369px;
+    background: url(../img/master__man-mobile.png) no-repeat;
+  }
+
+  .master__page-steps_section{
+    height: 234px;
+    padding-bottom: 0;
+  }
+
+  .master__page .master__checkist-block{
+    background: none;
+    background-color: white;
+    flex-direction: column;
+    padding: 24px;
+    top: -66px;
+    margin-bottom: 0;
+  }
+
+  .master__page .master__checkist-block_caption h2 br{
+    display: none;
+  }
+
+  .master__page .master__checkist-block_caption h2{
+    margin-bottom: 24px;
+  }
+
+  .master__page .master__checkist-block_caption{
+    width: 100%;
+  }
+
+  .master__page .master__checkist-block_form .regis__input-block{
+    width: calc(50% - 24px);
+  }
+
+  .master__page .master__checkist-block_form .small__input{
+    width: 50%;
+  }
+
+  .master__page .master__checkist-block_form{
+    width: 100%;
+  }
+
+  .master__page .master__checkist-block:after{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .master__page .master__description{
+    margin-bottom: 370px;
+  }
+
+  .master__page-steps_section ul{
+    top: -426px;
+  }
+
+
+}
+
+@media (max-width: 767px) {
+
+  .master__page h1{
+    @include f_24_b;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+
+  .master__page .master__description{
+    max-width: 343px;
+    width: 100%;
+    @include f_16;
+    line-height: 24px;
+  }
+
+  .master__page .master__description{
+    margin-bottom: 390px;
+  }
+
+  .master__page-steps_section ul{
+    top: -446px;
+  }
+
+  .master__page-steps_section ul li:not(:last-child):after{
+    width: 10px;
+    height: 20px;
+    background-size: cover;
+  }
+
+  .master__page .master__checkist-block_form-position{
+    flex-direction: column;
+  }
+
+  .master__page .master__checkist-block_form .regis__input-block{
+    width: 100%;
+  }
+
+  .master__page .master__checkist-block_form-caption{
+    margin-top: 24px;
+  }
+
+  .master__page .master__checkist-block_check-position{
+    flex-direction: column;
+  }
+
+  .master__page .master__checkist-block_check-position-left{
+    width: 100%;
+  }
+
+  .master__page .master__checkist-block_check-position .form-check{
+    width: 100%;
+  }
+
+  .master__page .form-check-label{
+    width: 100%;
+    margin-top: -1px;
+  }
+
+  .master__page .master__checkist-block_check-position .form-check:not(:last-child){
+    margin-bottom: 12px;
+  }
+
+  .master__page .master__checkist-block_check-position-left{
+    margin-bottom: 12px;
+  }
+
+  .master__page .master__checkist-block_check-position{
+    margin-bottom: 27px;
+  }
+
+  .master__page .master__checkist-block_btn-position{
+    flex-direction: column;
+  }
+
+  .master__page .master__checkist-block_btn-position .btn_red{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .master__page .master__checkist-block_btn-position .police-text{
+    width: 100%;
+  }
+
+  .master__input-dropdown .form-check .form-check-label{
+    width: calc(100% - 30px);
+  }
+
+  .master__page .master__input-dropdown .form-check{
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+
+  .master__page-steps_section ul li{
+    width: 70px;
+  }
+
+  .master__page-steps_section ul li:not(:last-child):after{
+    right: -30px;
+  }
+
+  .master__page-steps_section ul li div span{
+    @include f_24_b;
+    line-height: 0;
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  .master__page-steps_section ul li:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .master__page-steps_section ul li:not(:last-child):after{
+    right: -26px;
+    top: 25px;
+  }
+
+
 
 }
