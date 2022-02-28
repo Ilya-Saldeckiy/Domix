@@ -12,7 +12,7 @@
         </ul>
     </div>
 </section>
-<section class="catalog-zag sample-home__tittle">
+<section class="catalog-zag sample-home__tittle styling__caption">
     <div class="container">
         <h1>
             Укладка ламината
@@ -101,10 +101,16 @@
                     <div class="styling__sidebar__mobile-position">
                         <div class="styling__sidebar-price_block">
                             <h3>Укладка</h3>
-                            <p class="styling__sidebar-price">300 ₽ <span>за м2</span> </p>
+                            <p class="styling__sidebar-price">300 ₽ <span>за м<sup>2</sup></span> </p>
                         </div>
                         <div class="single-sku">
-                            <input type="number" min="1" step="1" value="3" class="single-sku__number">
+                            <div class="single-sku_counter">
+                                <span id="counter">1</span>
+                                <span>м<sup>2</sup></span>
+                                <button class="single-sku-btn single-sku-minus" id="min"></button>
+                                <button class="single-sku-btn single-sku-plus" id="plus"></button>
+                            </div>
+                            <!--                            <input type="number" min="1" step="1" value="3" class="single-sku__number">-->
                         </div>
                     </div>
                     <div class="styling__sidebar-options_block">
@@ -151,4 +157,4 @@
 
 
 
-//= template/footer.html
+//= template/footer-yellow.html

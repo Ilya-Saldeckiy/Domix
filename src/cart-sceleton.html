@@ -19,346 +19,61 @@
         </h1>
     </div>
 </section>
-<section class="cart-wrapper">
+<section class="cart-wrapper sceleton__page">
     <div class="container">
         <h1 class="order__mobile-caption">Корзина</h1>
-        <div class="wrapper-block">
-            <button data-tab="1" class="btn wrapper__btn active">Товары</button>
-            <button data-tab="2" class="btn wrapper__btn">Образцы</button>
-        </div>
+        <div class="wrapper-block loading"></div>
     </div>
 </section>
-<section>
+<section class="sceleton__page">
     <div class="container">
-        <div data-tab-content="1" class="wrapper__content active">
-            <div class="product__list">
-                <div class="product__item">
-                    <div class="product__item-position">
-                        <a href="#" class="product__item-image-link">
-                            <img class="product__item-image" src="img/image-1-cart.png" alt="item">
-                        </a>
-                        <div class="position-description">
-                            <div class="product__item-description-block">
-                                <div class="product__description-position">
-                                    <div class="description">
-                                        <p class="description__block-code">Арт. 390123002</p>
-                                        <a href="#" class="description__block-title">Образец Ламинат Praktik Massive 5501 дуб белый 240х1215 мм</a>
-                                    </div>
-                                    <div class="count-block d-flex align-items-center">
-                                        <div class="product__list-couner-position">
-                                            <label>
-                                                <input id="calculator_product_quantity" name="product_quantity" type="number" min="1" value="2" class="single-sku__number value-counter form-item form-item--number product-comp-item-block">
-                                            </label>
-                                        </div>
-                                        <div class="cart__info_btn-position">
-                                            <button class="btn cart__info-btn">i</button>
-                                            <div class="cart__info-block">
-                                                <p>
-                                                    Сейчас в наличии только <span>25 м2</span>. Возможно, товар уже в пути. Вы можете оформить заказ - перед оплатой с вами свяжется менеджер и сообщит о приходе недостающего количества товара.
-                                                </p>
-                                                <svg width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M17 18L0.545519 -7.15168e-07L33.4545 -3.59216e-06L17 18Z" fill="#F5F4F0"/>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product__price-position_block">
-                                    <div class="product__item-price-block">
-                                        <p class="product__item-price">6 400 ₽</p>
-                                        <p class="product__item-price-m2">2 400 ₽
-                                            <span>за м²</span>
-                                        </p>
-                                    </div>
-                                    <button class="btn product__item-delete_btn">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9 9H10.5V18H9V9ZM13.5 9H15V18H13.5V9Z" fill="#BDBDBD"/>
-                                            <path d="M3 4.5V6H4.5V21C4.5 21.3978 4.65804 21.7794 4.93934 22.0607C5.22064 22.342 5.60218 22.5 6 22.5H18C18.3978 22.5 18.7794 22.342 19.0607 22.0607C19.342 21.7794 19.5 21.3978 19.5 21V6H21V4.5H3ZM6 21V6H18V21H6ZM9 1.5H15V3H9V1.5Z" fill="#BDBDBD"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="product__item-buttons-block">
-                                <a class="btn product__item-related_btn" data-toggle="modal" data-target="#exampleModal">Сопутствующие товары</a>
-                                <a class="btn product__item-add_btn">
-                                    <svg class="plus" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.75 5.25V0H5.25V5.25H0V6.75H5.25V12H6.75V6.75H12V5.25H6.75Z" fill="#858585"/>
-                                    </svg>
-                                    <svg class="minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 0.25H0V1.75H12V0.25Z" fill="#858585"/>
-                                    </svg>
-                                    Добавить услуги
-                                </a>
-                                <div class="product__item-addition-block addition">
-                                    <div class="addition__block">
-                                        <div class="switch-btn"></div>
-                                        <p class="addition__tittle">3D дизайн-проект</p>
-                                        <p class="addition__price">от 1 400 ₽</p>
-                                    </div>
-                                    <div class="addition__block">
-                                        <div class="switch-btn"></div>
-                                        <p class="addition__tittle">Сделаем расчет за вас</p>
-                                        <p class="addition__price">от 400 ₽</p>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="cart__sceleton-position">
+            <div class="cart__row">
+                <div class="cart__row-position">
+                    <div class="cart__row-img loading"></div>
+                    <div class="cart__row-description">
+                        <div class="d-flex align-items-center">
+                            <div class="cart__row-description_article loading"></div>
+                            <div class="cart__row-right_delete loading d-md-none"></div>
                         </div>
+                        <div class="cart__row-description_caption loading"></div>
+                        <div class="cart__row-description_btn loading"></div>
+                    </div>
+                    <div class="cart__row-counter loading"></div>
+                    <div class="cart__row-right">
+                        <div class="cart__row-right_delete loading"></div>
+                        <div class="cart__row-right_price loading"></div>
+                        <div class="cart__row-right_sale loading"></div>
                     </div>
                 </div>
-                <div class="product__item">
-                    <div class="product__item-position">
-                        <a href="#" class="product__item-image-link">
-                            <img class="product__item-image" src="img/image-1-cart.png" alt="item">
-                        </a>
-                        <div class="position-description">
-                            <div class="product__item-description-block">
-                                <div class="product__description-position">
-                                    <div class="description">
-                                        <p class="description__block-code">Арт. 390123002</p>
-                                        <a href="#" class="description__block-title">Образец Ламинат Praktik Massive 5501 дуб белый 240х1215 мм</a>
-                                    </div>
-                                    <div class="count-block d-flex align-items-center">
-                                        <div class="product__list-couner-position">
-                                            <label>
-                                                <input readonly type="number" min="1" step="1" value="2" class="single-sku__number" placeholder="in">
-                                            </label>
-                                        </div>
-                                        <div class="cart__info_btn-position">
-                                            <button class="btn cart__info-btn">i</button>
-                                            <div class="cart__info-block">
-                                                <p>
-                                                    Сейчас в наличии только <span>25 м2</span>. Возможно, товар уже в пути. Вы можете оформить заказ - перед оплатой с вами свяжется менеджер и сообщит о приходе недостающего количества товара.
-                                                </p>
-                                                <svg width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M17 18L0.545519 -7.15168e-07L33.4545 -3.59216e-06L17 18Z" fill="#F5F4F0"/>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product__price-position_block">
-                                    <div class="product__item-price-block">
-                                        <p class="product__item-price">6 400 ₽</p>
-                                        <div class="position-price-block-product">
-                                            <p class="product__item-price-m2 product__item-price-m2-line">3 900 ₽
-                                                <span>за м²</span>
-                                            </p>
-                                            <p class="product__item-price-sale Red_1">2 400 ₽
-                                                <span class="Red_1">за м²</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <button class="btn product__item-delete_btn">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9 9H10.5V18H9V9ZM13.5 9H15V18H13.5V9Z" fill="#BDBDBD"/>
-                                            <path d="M3 4.5V6H4.5V21C4.5 21.3978 4.65804 21.7794 4.93934 22.0607C5.22064 22.342 5.60218 22.5 6 22.5H18C18.3978 22.5 18.7794 22.342 19.0607 22.0607C19.342 21.7794 19.5 21.3978 19.5 21V6H21V4.5H3ZM6 21V6H18V21H6ZM9 1.5H15V3H9V1.5Z" fill="#BDBDBD"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="product__item-buttons-block">
-                                <a class="btn product__item-related_btn" data-toggle="modal" data-target="#exampleModal">Сопутствующие товары</a>
-                                <a class="btn product__item-add_btn">
-                                    <svg class="plus" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.75 5.25V0H5.25V5.25H0V6.75H5.25V12H6.75V6.75H12V5.25H6.75Z" fill="#858585"/>
-                                    </svg>
-                                    <svg class="minus" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 0.25H0V1.75H12V0.25Z" fill="#858585"/>
-                                    </svg>
-                                    Добавить услуги
-                                </a>
-                                <div class="product__item-addition-block addition">
-                                    <div class="addition__block">
-                                        <div class="switch-btn addition__switch-btn"></div>
-                                        <p class="addition__tittle">3D дизайн-проект</p>
-                                        <p class="addition__price">от 1 400 ₽</p>
-                                    </div>
-                                    <div class="addition__block">
-                                        <div class="switch-btn addition__switch-btn"></div>
-                                        <p class="addition__tittle">Сделаем расчет за вас</p>
-                                        <p class="addition__price">от 400 ₽</p>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="cart__row-position">
+                    <div class="cart__row-img loading"></div>
+                    <div class="cart__row-description">
+                        <div class="d-flex align-items-center">
+                            <div class="cart__row-description_article loading"></div>
+                            <div class="cart__row-right_delete loading d-md-none"></div>
                         </div>
+                        <div class="cart__row-description_caption loading"></div>
+                        <div class="cart__row-description_btn loading"></div>
+                    </div>
+                    <div class="cart__row-counter loading"></div>
+                    <div class="cart__row-right">
+                        <div class="cart__row-right_delete loading"></div>
+                        <div class="cart__row-right_price loading"></div>
+                        <div class="cart__row-right_sale loading"></div>
                     </div>
                 </div>
             </div>
-            <div class="receipt_sidebar">
-                <div class="sidebar__inner">
-                    <div class="receipt__block">
-                        <div class="receipt__price-block">
-                            <div class="receipt__count-products-block">
-                                <p class="receipt__count">10 товаров</p>
-                                <p class="receipt__weight">80 кг</p>
-                                <p class="receipt__first-price">4 187 ₽</p>
-                            </div>
-                            <div class="receipt__sale-block">
-                                <button type="button" class="btn promocode__delete-btn">
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10 0.875L9.125 0L5 4.125L0.875 0L0 0.875L4.125 5L0 9.125L0.875 10L5 5.875L9.125 10L10 9.125L5.875 5L10 0.875Z" fill="#242424"/>
-                                    </svg>
-                                </button>
-                                <p class="receipt__promo">Промокод SALE2020</p>
-                                <p class="receipt__sale-price"> – 1 000 ₽</p>
-                            </div>
-                            <div class="receipt__sale-block">
-                                <button type="button" class="btn promocode__delete-btn">
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10 0.875L9.125 0L5 4.125L0.875 0L0 0.875L4.125 5L0 9.125L0.875 10L5 5.875L9.125 10L10 9.125L5.875 5L10 0.875Z" fill="#242424"/>
-                                    </svg>
-                                </button>
-                                <p class="receipt__promo">Промокод New</p>
-                                <p class="receipt__sale-price"> – 1 000 ₽</p>
-                            </div>
-                            <div class="receipt__total-price-block">
-                                <p class="receipt__text">Итого</p>
-                                <p class="receipt__price">2 187 ₽</p>
-                            </div>
-                            <form class="receipt__form">
-                                <input class="receipt__form-input" type="text" placeholder="Введите промокод">
-                                <button class="btn receipt__form-btn">Применить</button>
-                            </form>
-                        </div>
-                        <button class="btn receipt__registration-btn btn_red">Перейти к оформлению</button>
-                    </div>
+            <div class="sticky__cart-sceleton-position">
+                <div class="sticky__cart-sceleton_block">
+                    <div class="sticky__cart-sceleton_caption loading"></div>
+                    <div class="sticky__cart-sceleton_description loading"></div>
+                    <div class="sticky__cart-sceleton_sales loading"></div>
+                    <div class="sticky__cart-sceleton_promocode loading"></div>
                 </div>
+                <div class="sticky__cart-sceleton_btn loading"></div>
             </div>
-        </div>
-        <div data-tab-content="2" class="wrapper__content sample">
-                <div class="product__list">
-                    <div class="product__item">
-                        <div class="d-flex position__flex">
-                            <a href="#" class="product__item-image-link">
-                                <img class="product__item-image" src="img/image-1-cart.png" alt="item">
-                            </a>
-                            <div class="position-description">
-                                <div class="product__item-description-block d-flex align-items-center">
-                                    <div class="description">
-                                        <p class="description__block-code">Арт. 390123002</p>
-                                        <a href="#" class="description__block-title">Образец Ламинат Praktik Massive 5501 дуб белый 240х1215 мм</a>
-                                    </div>
-                                    <div class="product__price-position_block">
-                                        <button class="btn product__item-delete_btn">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9 9H10.5V18H9V9ZM13.5 9H15V18H13.5V9Z" fill="#BDBDBD"/>
-                                                <path d="M3 4.5V6H4.5V21C4.5 21.3978 4.65804 21.7794 4.93934 22.0607C5.22064 22.342 5.60218 22.5 6 22.5H18C18.3978 22.5 18.7794 22.342 19.0607 22.0607C19.342 21.7794 19.5 21.3978 19.5 21V6H21V4.5H3ZM6 21V6H18V21H6ZM9 1.5H15V3H9V1.5Z" fill="#BDBDBD"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product__item">
-                        <div class="d-flex position__flex">
-                            <a href="#" class="product__item-image-link">
-                                <img class="product__item-image" src="img/image-1-cart.png" alt="item">
-                            </a>
-                            <div class="position-description">
-                                <div class="product__item-description-block d-flex align-items-center">
-                                    <div class="description">
-                                        <p class="description__block-code">Арт. 390123002</p>
-                                        <a href="#" class="description__block-title">Образец Ламинат Praktik Massive 5501 дуб белый 240х1215 мм</a>
-                                    </div>
-                                    <div class="product__price-position_block">
-                                        <button class="btn product__item-delete_btn">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9 9H10.5V18H9V9ZM13.5 9H15V18H13.5V9Z" fill="#BDBDBD"/>
-                                                <path d="M3 4.5V6H4.5V21C4.5 21.3978 4.65804 21.7794 4.93934 22.0607C5.22064 22.342 5.60218 22.5 6 22.5H18C18.3978 22.5 18.7794 22.342 19.0607 22.0607C19.342 21.7794 19.5 21.3978 19.5 21V6H21V4.5H3ZM6 21V6H18V21H6ZM9 1.5H15V3H9V1.5Z" fill="#BDBDBD"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product__item">
-                        <div class="d-flex position__flex">
-                            <a href="#" class="product__item-image-link">
-                                <img class="product__item-image" src="img/image-1-cart.png" alt="item">
-                            </a>
-                            <div class="position-description">
-                                <div class="product__item-description-block d-flex align-items-center">
-                                    <div class="description">
-                                        <p class="description__block-code">Арт. 390123002</p>
-                                        <a href="#" class="description__block-title">Образец Ламинат Praktik Massive 5501 дуб белый 240х1215 мм</a>
-                                    </div>
-                                    <div class="product__price-position_block">
-                                        <button class="btn product__item-delete_btn">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9 9H10.5V18H9V9ZM13.5 9H15V18H13.5V9Z" fill="#BDBDBD"/>
-                                                <path d="M3 4.5V6H4.5V21C4.5 21.3978 4.65804 21.7794 4.93934 22.0607C5.22064 22.342 5.60218 22.5 6 22.5H18C18.3978 22.5 18.7794 22.342 19.0607 22.0607C19.342 21.7794 19.5 21.3978 19.5 21V6H21V4.5H3ZM6 21V6H18V21H6ZM9 1.5H15V3H9V1.5Z" fill="#BDBDBD"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product__item">
-                        <div class="d-flex position__flex">
-                            <a href="#" class="product__item-image-link">
-                                <img class="product__item-image" src="img/image-1-cart.png" alt="item">
-                            </a>
-                            <div class="position-description">
-                                <div class="product__item-description-block d-flex align-items-center">
-                                    <div class="description">
-                                        <p class="description__block-code">Арт. 390123002</p>
-                                        <a href="#" class="description__block-title">Образец Ламинат Praktik Massive 5501 дуб белый 240х1215 мм</a>
-                                    </div>
-                                    <div class="product__price-position_block">
-                                        <button class="btn product__item-delete_btn">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9 9H10.5V18H9V9ZM13.5 9H15V18H13.5V9Z" fill="#BDBDBD"/>
-                                                <path d="M3 4.5V6H4.5V21C4.5 21.3978 4.65804 21.7794 4.93934 22.0607C5.22064 22.342 5.60218 22.5 6 22.5H18C18.3978 22.5 18.7794 22.342 19.0607 22.0607C19.342 21.7794 19.5 21.3978 19.5 21V6H21V4.5H3ZM6 21V6H18V21H6ZM9 1.5H15V3H9V1.5Z" fill="#BDBDBD"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product__item">
-                        <div class="d-flex position__flex">
-                            <a href="#" class="product__item-image-link">
-                                <img class="product__item-image" src="img/image-1-cart.png" alt="item">
-                            </a>
-                            <div class="position-description">
-                                <div class="product__item-description-block d-flex align-items-center">
-                                    <div class="description">
-                                        <p class="description__block-code">Арт. 390123002</p>
-                                        <a href="#" class="description__block-title">Образец Ламинат Praktik Massive 5501 дуб белый 240х1215 мм</a>
-                                    </div>
-                                    <div class="product__price-position_block">
-                                        <button class="btn product__item-delete_btn">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9 9H10.5V18H9V9ZM13.5 9H15V18H13.5V9Z" fill="#BDBDBD"/>
-                                                <path d="M3 4.5V6H4.5V21C4.5 21.3978 4.65804 21.7794 4.93934 22.0607C5.22064 22.342 5.60218 22.5 6 22.5H18C18.3978 22.5 18.7794 22.342 19.0607 22.0607C19.342 21.7794 19.5 21.3978 19.5 21V6H21V4.5H3ZM6 21V6H18V21H6ZM9 1.5H15V3H9V1.5Z" fill="#BDBDBD"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <div class="receipt_sidebar2">
-                <div class="sidebar__inner">
-                    <div class="receipt__block">
-                        <div class="receipt__price-block">
-                            <div class="receipt__count-products-block">
-                                <p class="receipt__count">Количество</p>
-                                <p class="receipt__first-price">8</p>
-                            </div>
-                            <div>
-                                <p class="receipt__sample-description">Тут будет текст с описанием</p>
-                            </div>
-                        </div>
-                        <button class="btn receipt__registration-btn btn_red">Перейти к оформлению</button>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>

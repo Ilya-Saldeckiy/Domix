@@ -54,8 +54,8 @@
           background: linear-gradient(135.48deg, #922F27 -3.03%, #B40D0D 96.14%);
           border: 10px solid #FFFFFF;
           border-radius: 100px;
-          width: 90px;
-          height: 90px;
+          width: 100px;
+          height: 100px;
           position: absolute;
           bottom: -25px;
           left: -10px;
@@ -199,17 +199,17 @@
         }
 
         &-right{
-          padding-top: 6%;
+          padding-top: 5%;
           padding-left: 110px;
           padding-right: 63px;
-          padding-bottom: 7%;
+          padding-bottom: 6%;
         }
 
         &-left{
           padding-top: 6%;
           padding-left: 90px;
           padding-right: 83px;
-          padding-bottom: 7%;
+          padding-bottom: 6%;
         }
       }
 
@@ -381,6 +381,10 @@
     margin-bottom: 35px;
   }
 
+  .sample-home__page .sample-home__steps-item_block img{
+    height: 270px;
+  }
+
   .sample-home__page .sample-home__description{
     margin-bottom: 29px;
   }
@@ -406,6 +410,25 @@
     margin-bottom: 60px;
   }
 
+
+  .sample-home__page .sample-home__card-block_img{
+    background-size: 90%;
+  }
+
+  .sample-home__card-block_text{
+    padding: 6% 83px 6% 90px;
+  }
+
+  .sample-home__page .sample-home__card-item:not(:last-child){
+    margin-bottom: 60px;
+  }
+
+  .sample-home__page .sample-home__card-item:last-child{
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 980px){
   .sample-home__page .sample-home__card-block_img{
     width: 100%;
     padding-top: 42px;
@@ -426,11 +449,7 @@
   }
 
   .sample-home__page .sample-home__card-block_text{
-    //max-width: 100%;
-    padding-top: 32px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 32px;
+    max-width: 100%;
   }
 
   .sample-home__page .sample-home__card-item_right{
@@ -439,6 +458,22 @@
 
   .sample-home__page .sample-home__description{
     width: 100%;
+    padding: 0;
+
+  }
+
+  .sample-home__page .sample-home__card-block_text-right{
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+  }
+
+  .sample-home__page .sample-home__card-block_text-left{
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
   }
 
   .sample-home__page .sample-home__card-item:not(:last-child){
@@ -448,6 +483,10 @@
   .sample-home__page .sample-home__card-item:last-child{
     margin-bottom: 60px;
   }
+
+  .sample-home__page .sample-home__card-block_img{
+    background-size: contain;
+  }
 }
 
 @media (max-width: 767px){
@@ -455,6 +494,11 @@
   .sample-home__page .sample-home__card-block_img{
     padding-bottom: 80%;
   }
+
+  .sample-home__page .sample-home__steps-item_block img{
+    height: auto;
+  }
+
 
   .sample-home__page .sample-home__description{
     @include f_16;
@@ -496,8 +540,8 @@
   }
 
   .sample-home__page .sample-home__steps-item_count{
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     bottom: -37px;
     left: 0;
   }
@@ -606,6 +650,10 @@
     margin-bottom: 24px;
   }
 
+  .sample-home__page .sample-home__caption-mobile{
+    margin-bottom: 16px;
+  }
+
 
 
 }
@@ -629,5 +677,9 @@
 
   .sample-home__page .sample-home__card-block_img {
     padding-bottom: 78%;
+  }
+
+  .sample-home__page .sample-home__steps-item_block img{
+    height: 210px;
   }
 }

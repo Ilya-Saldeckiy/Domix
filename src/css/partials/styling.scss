@@ -1,5 +1,10 @@
 
 
+.styling__caption{
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
 .styling__page{
 
   & .styling{
@@ -112,7 +117,8 @@
         width: 100%;
         border: 1px solid #F4B556;
         border-radius: 8px;
-        padding: 24px;
+        padding: 17px;
+        padding-left: 24px;
 
         & svg{
           margin-right: 20px;
@@ -325,6 +331,9 @@
 
   & .single-sku-minus{
     left: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
 
     &:after{
       display: block;
@@ -343,6 +352,9 @@
 
   & .single-sku-plus{
     right: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
 
     &:after{
       display: block;
@@ -375,6 +387,9 @@
 
 }
 
+.styling__page .single-sku_counter{
+  height: 41px;
+}
 
 
 @media (max-width: 1309.5px) {
@@ -407,6 +422,19 @@
 
   .styling__page .styling__content_options-item_caption{
     width: 300px;
+  }
+
+  .styling__page .styling__content{
+    margin-right: 46px;
+  }
+
+  .styling__page .styling__content_options-item .btn_ret-trans{
+    height: 48px;
+
+  }
+
+  .styling__page .styling__content_description-text:last-child{
+    margin-bottom: 0;
   }
 
 }
@@ -540,7 +568,7 @@
 
   .styling__page .styling__content-list:after{
     content: "";
-    width: 100%;
+    width: 90%;
     height: 60px;
     background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
     display: block;
@@ -631,6 +659,11 @@
     height: auto;
   }
 
+  .styling__caption{
+    margin-top: 15px;
+    margin-bottom: 24px;
+  }
+
   .styling__page .styling__content_options-item_caption{
     width: 100%;
     margin-bottom: 16px;
@@ -644,13 +677,50 @@
     margin-right: auto;
   }
 
+  .styling__caption h1{
+    margin-bottom: 24px;
+  }
+
+  .styling__page .styling__content-list li span{
+    @include f_14;
+    line-height: 24px;
+  }
+
+  .styling__page .styling__content-h2{
+    margin-bottom: 20px;
+  }
+
+  .styling__page .styling__content_options-item:not(:last-child){
+    margin-bottom: 34px;
+  }
+
+  .styling__page .styling__content_description-text:not(:last-child){
+    margin-bottom: 12px;
+  }
+
+  .styling__page .styling__content_description-text{
+    @include f_14;
+    line-height: 20px;
+  }
+
+  .styling__page .styling__sidebar{
+    border: 1px solid #E1E1E1;
+    box-shadow: 0px 4px 30px rgba(86, 86, 86, 0.2);
+    border-radius: 0;
+  }
+
 }
 
 @media (max-width: 480px) {
   .styling__page .styling__sidebar-options-text {
     width: 74%;
   }
+
+  .styling__page .single-sku_counter{
+    width: 145px;
+  }
 }
+
 
 
 

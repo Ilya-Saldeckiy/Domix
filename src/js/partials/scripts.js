@@ -3241,6 +3241,31 @@ $(document).ready(function () {
         $('.shop__item-card-position').addClass('shop__item-card-position-opencard-mobile');
     })
 
+    $('.cart__info-block').hide();
+
+
+    if($(window).width() >= 981){
+        $( ".cart__info-btn" ).hover(function(){ // задаем функцию при наведении курсора на элемент
+            $( this).parent().children('.cart__info-block').show(300)
+        }, function(){ // задаем функцию, которая срабатывает, когда указатель выходит из элемента
+            $( this).parent().children('.cart__info-block').hide(300) // задаем текстовое содержимое
+        });
+    }else{
+        $('.cart__info-btn').click(function() {
+            $('#cart__modal').modal('show');
+        });
+    }
+
+
+    // $('#counter').on('click',function () {
+    //     var value = $(this).text();
+    //     $(this).replaceWith("<input id='counter__value'>");
+    //     $('#counter__value').val(value);
+    // })
+    //
+    // $('#counter__value').focus
+
+
     $('.master__input-dropdown').hide();
 
     $('.sity__input').on('click', function () {
@@ -3253,11 +3278,9 @@ $(document).ready(function () {
         if ( !div.is(e.target) // если клик был не по нашему блоку
             && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
             div.hide(); // скрываем его
-            $('.sity__input').removeClass('.sity__input-active')
+            div.parent().removeClass('sity__input-active')
         }
     });
-
-
 
 
 });

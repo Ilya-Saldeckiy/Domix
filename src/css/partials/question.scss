@@ -68,7 +68,7 @@
         & .single-faq .single-faq-body{
           padding-top: 8px;
           padding-right: 40px;
-          margin-bottom: 36px;
+          margin-bottom: 24px;
 
         }
 
@@ -116,7 +116,7 @@
       margin-bottom: 40px;
 
       & input{
-        width: 100%;
+        width: calc(100% - 139px);
         height: 40px;
         margin-right: 12px;
         border-radius: 8px;
@@ -173,6 +173,22 @@
         }
       }
 
+
+
+      & a{
+        color: $Brown_1;
+        display: block;
+        @include f_16;
+
+        &:not(:last-child){
+          margin-bottom: 12px;
+        }
+
+        &:hover{
+          color: $Black;
+        }
+      }
+
       &-block{
         padding-left: 24px;
         margin-bottom: 16px;
@@ -185,20 +201,6 @@
           &:not(:last-child){
             margin-bottom: 12px;
           }
-        }
-      }
-
-      & a{
-        color: $Brown_1;
-        display: block;
-        @include f_16;
-
-        &:not(:last-child){
-          margin-bottom: 16px;
-        }
-
-        &:hover{
-          color: $Black;
         }
       }
 
@@ -299,5 +301,60 @@
 
   .margin-item {
     margin-bottom: 40px;
+  }
+
+  .question__page .question__search-block input{
+    width: calc(100% - 108px);
+  }
+
+  .question__page .question__filter-block a:not(:last-child){
+    margin-bottom: 11px;
+  }
+
+  .question__page .question__content-section .single-faq .single-faq-body{
+    margin-bottom: 16px;
+  }
+
+  .paginations {
+    width: 96%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+
+  .question__page .paginations .paginations-list li .item{
+    height: 35px;
+    width: 35px;
+  }
+
+  .question__page .question__filter a:hover{
+    color: $Brown_1;
+  }
+
+  .question__page .question__filter a{
+    text-align: left;
+  }
+
+  .question__page .question__filter-active .question__filter-btn {
+    color: $Black;
+    margin-bottom: 16px;
+  }
+
+  .question__filter-mobile .question__filter-btn{
+    width: 100%;
+    display: block;
+    text-align: left;
+    background-color: unset;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    border: 0;
+    outline: none;
+    margin-bottom: 12px;
+    color: $Brown_1;
+  }
+
+  .yellow .question__page .question__filter a:hover{
+    color: $Black;
   }
 }

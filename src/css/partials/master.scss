@@ -262,6 +262,44 @@
 
 }
 
+.yellow {
+
+  .master__page-steps_section ul li div{
+    background: $Yellow_1;
+
+    & span{
+      color: $Black;
+    }
+  }
+
+  .master__page .master__checkist-block{
+    background-image: url("../img/master__lower-img-yellow.svg");
+    background-repeat: no-repeat;
+
+    @media (max-width: 980px) {
+
+      background-image: none;
+
+    }
+  }
+
+  .master__page .master__checkist-block:after{
+    background-image: url("../img/master__man-yellow.png");
+    
+    @media (max-width: 1200.5px) {
+
+      background-image: url("../img/master__man-tablet-yellow.png");
+
+    }
+
+    @media (max-width: 980px) {
+
+      background-image: url("../img/master__man-mobile-yellow.png");
+
+    }
+  }
+}
+
 
 @media (max-width: 1200.5px) {
 

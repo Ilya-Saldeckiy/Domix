@@ -1,0 +1,722 @@
+
+.clients__page-breadcrumbs{
+  margin-bottom: 0;
+}
+
+.clients__page{
+
+  .clients{
+
+    &__caption-block-position{
+      display: flex;
+      align-items: center;
+      padding-top: 56px;
+      padding-bottom: 92px;
+      background: url("../img/clients__card.png") 95% 50% no-repeat;
+      margin-bottom: 36px;
+    }
+
+    &__caption-block{
+
+      & h1{
+        @include f_34_b;
+        line-height: 40px;
+        margin-bottom: 40px;
+      }
+
+      & p{
+        width: 554px;
+        @include f_24;
+        margin-bottom: 64px;
+      }
+
+    }
+
+    &__caption-btn{
+      width: 254px;
+      height: 56px;
+    }
+
+    &__card{
+
+      &-list{
+         display: flex;
+         align-items: flex-start;
+         column-gap: 133px;
+        margin-bottom: 110px;
+      }
+
+      &-item{
+
+        width: 220px;
+
+        & svg{
+          margin-bottom: 27px;
+        }
+
+        & p{
+          @include f_16_b;
+          line-height: 24px;
+          color: $Black;
+          margin-bottom: 0;
+        }
+      }
+
+    }
+
+    &__advantages{
+
+      &-block{
+        width: 100%;
+        padding: 60px;
+        background-color: $Grey_4;
+        border-radius: 12px;
+        margin-bottom: 110px;
+      }
+
+      &-caption{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        color: $Black;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      &-list{
+        display: flex;
+        align-items: flex-start;
+        column-gap: 60px;
+        row-gap: 80px;
+        flex-wrap: wrap;
+      }
+
+      &-item{
+        display: flex;
+        align-items: flex-start;
+        column-gap: 24px;
+        width: 245px;
+
+        &_text{
+
+          width: 188px;
+
+          & h3{
+            @include f_14_b;
+            line-height: 20px;
+            margin-bottom: 12px;
+          }
+
+          & p{
+            @include f_14;
+            line-height: 20px;
+            color: $Grey_1;
+            margin-bottom: 0;
+          }
+
+        }
+      }
+
+    }
+
+    &__bonus{
+
+      &-block{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 110px;
+      }
+
+      &-img{
+        margin-right: auto;
+      }
+
+      &-text{
+        position: relative;
+        top: 30px;
+
+        & h2{
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 40px;
+          color: $Black;
+          margin-bottom: 64px;
+        }
+
+        & ul{
+          padding-left: 0px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 0;
+
+          & li{
+            width: 90px;
+            position: relative;
+
+            &:not(:last-child){
+              margin-right: 150px;
+              &:after{
+                content: " ";
+                width: 15px;
+                height: 24px;
+                display: block;
+                background: url("../img/master__arrow.svg") no-repeat;
+                position: absolute;
+                right: -75px;
+                top: 33px;
+              }
+            }
+
+            & div{
+              width: 90px;
+              height: 90px;
+              background: linear-gradient(135.48deg, #922F27 -3.03%, #B40D0D 96.14%);
+              border: 0;
+              border-radius: 100px;
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 32px;
+
+              & span{
+                font-size: 40px;
+                line-height: 40px;
+                color: $White;
+              }
+            }
+
+            & p{
+              @include f_20_b;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+    }
+
+    &__form{
+
+      &-block{
+        display: flex;
+        padding: 60px;
+        border: 1px solid #E1E1E1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        margin-bottom: 65px;
+      }
+
+      &-caption{
+
+        &_block{
+          margin-right: auto;
+
+          & h2{
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 40px;
+            margin-bottom: 24px;
+          }
+
+        }
+
+        &_info{
+          display: flex;
+          column-gap: 11px;
+
+          &-btn{
+            width: 18px;
+            height: 18px;
+            align-items: center;
+            padding: 0;
+            border-radius: 100%;
+            padding-top: 2px;
+            font-size: 14px;
+            line-height: 0;
+          }
+
+          & p{
+            @include f_14;
+            color: $Grey_1;
+            line-height: 20px;
+            width: 263px;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .master__checkist-block_form-position{
+    margin-bottom: 40px;
+  }
+
+  .clients__caption_img{
+    display: none;
+  }
+
+}
+
+.yellow{
+  .clients__page .clients__caption-block-position{
+    background-image: url("../img/clients__card-yellow.png");
+
+    @media (max-width: 980px) {
+
+      background-image: none;
+
+    }
+  }
+
+  .clients__page .clients__card-item svg path{
+    fill: #858585;
+  }
+
+  .clients__page .clients__bonus-text ul li div{
+    background: $Yellow_1;
+
+    & span{
+      color: $Black;
+    }
+  }
+}
+
+@media (max-width: 1309.5px) {
+  .clients__page .clients__advantages-item_text{
+    width: 170px;
+  }
+
+  .clients__page .clients__advantages-list{
+    column-gap: 25px;
+    row-gap: 40px;
+  }
+
+  .clients__page .clients__bonus-img img{
+    max-width: 580px;
+    width: 100%;
+  }
+
+  .clients__page .clients__bonus-img{
+    margin-right: 50px;
+  }
+
+  .clients__page .clients__bonus-text h2{
+    margin-bottom: 40px;
+  }
+
+  .clients__page .clients__bonus-text ul li:not(:last-child){
+    margin-right: 120px;
+  }
+
+  .clients__page .clients__bonus-text ul li:not(:last-child):after{
+    right: -70px;
+  }
+
+  .clients__page .clients__form-caption_block{
+    max-width: 195px;
+    width: 100%;
+  }
+
+  .clients__page .clients__form-caption_info p{
+    max-width: 160px;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 1199.5px){
+
+  .clients__page .clients__caption-block-position{
+    background-size: 468px 361px;
+    background-position: 95% 0%;
+    padding-bottom: 0;
+    margin-bottom: 80px;
+  }
+
+  .clients__page .clients__card-list{
+    margin-bottom: 73px;
+  }
+
+  .clients__page .clients__advantages-item_text{
+    width: 188px;
+  }
+
+  .clients__page .clients__advantages-list{
+    column-gap: 80px;
+    row-gap: 32px;
+  }
+
+  .clients__page .clients__advantages-block{
+    margin-bottom: 97px;
+  }
+
+  .clients__page .clients__bonus-img img{
+    max-width: 429px;
+  }
+
+  .clients__page .clients__bonus-text h2{
+    margin-bottom: 28px;
+  }
+
+  .clients__page .clients__bonus-text{
+    top: auto;
+  }
+
+  .clients__page .clients__bonus-text ul li div{
+    width: 80px;
+    height: 80px;
+  }
+
+  .clients__page .clients__bonus-text ul li:not(:last-child){
+    margin-right: 106px;
+  }
+
+  .clients__page .clients__bonus-text ul li:not(:last-child):after {
+    right: -55px;
+    top: 25px;
+  }
+
+  .clients__page .clients__bonus-img{
+    margin-right: auto;
+  }
+
+  .clients__page .clients__bonus-block{
+    margin-bottom: 80px;
+  }
+
+  .clients__page .clients__bonus-text ul li{
+    width: 100px;
+  }
+
+  .clients__page .clients__form-caption_block{
+    max-width: 260px;
+  }
+
+  .clients__page .master__checkist-block_form .regis__input-block{
+    width: 268px;
+  }
+
+  .clients__page .master__checkist-block_form .small__input{
+    width: 258px;
+  }
+
+  .clients__page .master__checkist-block_btn-position .btn_red{
+    width: 266px;
+    margin-right: 24px;
+  }
+
+  .clients__page .master__checkist-block_form{
+    width: 550px;
+  }
+
+  .clients__page .master__checkist-block_btn-position .police-text{
+    width: calc(100% - 272px);
+  }
+
+  .clients__page .clients__form-caption_info p{
+    max-width: 210px;
+  }
+
+  .clients__page .clients__advantages-block{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .clients__page .clients__caption-block h1{
+    margin-bottom: 35px;
+  }
+
+  .clients__page .clients__caption-block p{
+    margin-bottom: 71px;
+  }
+
+  .clients__page .clients__card-list{
+    column-gap: 52px;
+  }
+
+  .clients__page .clients__card-item:last-of-type{
+    width: 120px;
+  }
+
+  .clients__page .clients__bonus-text ul li div{
+    margin-bottom: 22px;
+  }
+
+  .clients__page .clients__bonus-text{
+    top: 10px;
+  }
+
+  .clients__page .clients__form-block{
+    margin-bottom: 80px;
+  }
+
+  .clients__page .clients__bonus-text ul li:not(:last-child){
+    margin-right: 96px;
+  }
+
+  .clients__page .clients__bonus-text ul li:not(:last-child):after{
+    right: -50px;
+  }
+
+}
+
+
+@media (max-width: 980px) {
+  .clients__page .clients__caption-block-position {
+   background: none;
+  }
+
+  .clients__page .clients__caption_img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 398px;
+    max-height: 261px;
+  }
+
+  .clients__caption-block{
+    width: 100%;
+  }
+
+  .clients__page .clients__caption-btn{
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .clients__page .clients__caption-block p{
+    margin-bottom: 16px;
+  }
+
+  .clients__page .clients__bonus-block{
+    flex-direction: column-reverse;
+  }
+
+  .clients__page .clients__bonus-text{
+    top: 0;
+  }
+
+  .clients__page .clients__bonus-text ul{
+    margin-bottom: 40px;
+  }
+
+  .clients__page .clients__bonus-img{
+    margin: 0 auto;
+  }
+
+  .clients__page .clients__bonus-block{
+    margin-bottom: 40px;
+  }
+
+  .clients__page .clients__advantages-list{
+    justify-content: center;
+  }
+
+  .clients__page .clients__form-block{
+    padding: 24px;
+  }
+
+  .clients__page .master__checkist-block_form .regis__input-block{
+    width: calc(50% - 24px);
+  }
+
+  .clients__page .master__input-dropdown .form-check-label{
+    width: calc(100% - 26px);
+  }
+
+  .clients__page .clients__form-caption_block{
+    margin-right: 24px;
+  }
+
+  .clients__page .clients__card-list{
+    column-gap: 24px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .clients__page .clients__caption-block-position{
+    padding-top: 16px;
+  }
+
+  .clients__page .clients__caption-block h1{
+    @include f_24_b;
+    line-height: 26px;
+    margin-bottom: 16px;
+    width: 282px;
+  }
+
+  .clients__page .clients__caption-block p{
+    @include f_16;
+    line-height: 24px;
+    margin-bottom: 31px;
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .clients__page .clients__caption_img{
+    max-width: 335px;
+  }
+
+  .clients__page .clients__caption-block-position{
+    margin-bottom: 54px;
+  }
+
+  .clients__page .clients__card-list{
+    flex-wrap: wrap;
+    row-gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  .clients__page .clients__card-item{
+    width: calc(50% - 12px);
+  }
+
+  .clients__page .clients__card-item p{
+    width: 170px;
+  }
+
+  .clients__page .clients__advantages-block{
+    padding: 24px;
+    margin-bottom: 40px;
+  }
+
+  .clients__page .clients__advantages-caption{
+    width: 295px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  .clients__page .clients__advantages-item{
+    width: 100%;
+  }
+
+  .clients__page .clients__advantages-item_text{
+    width: 100%;
+  }
+
+  .clients__page .clients__advantages-item_text h3 br{
+    display: none;
+  }
+
+  .clients__page .clients__bonus-text ul li div{
+    width: 70px;
+    height: 70px;
+    border: 5px solid #F5F4F0;
+    margin-bottom: 16px;
+  }
+
+  .clients__page .clients__bonus-text ul li div span{
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .clients__page .clients__bonus-text ul li:not(:last-child){
+    margin-right: 70px;
+  }
+
+  .clients__page .clients__bonus-text ul li:not(:last-child):after {
+    right: -30px;
+  }
+
+  .clients__page .clients__form-block{
+    flex-direction: column;
+  }
+
+  .clients__page .clients__form-caption_block h2{
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .clients__page .clients__form-caption_block{
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .clients__page .clients__form-caption_info p{
+    max-width: 250px;
+    margin-bottom: 24px;
+  }
+
+  .clients__page .master__checkist-block_form{
+    width: 100%;
+  }
+
+  .clients__page .master__checkist-block_form-position{
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  .clients__page .master__checkist-block_form .regis__input-block{
+    width: 100%;
+  }
+
+  .master__page .master__checkist-block_btn-position{
+    flex-direction: column;
+  }
+
+  .clients__page .master__checkist-block_btn-position .btn_red{
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .clients__page .master__checkist-block_btn-position .police-text{
+    width: 100%;
+  }
+
+  .clients__page .clients__form-block{
+    margin-bottom: 60px;
+  }
+
+  .clients__page .clients__bonus-text h2{
+    @include f_24_b;
+    margin-bottom: 40px;
+  }
+
+  .clients__page .clients__bonus-text ul li p{
+    @include f_14_b;
+  }
+
+  .clients__page .clients__bonus-text ul li {
+    width: 70px;
+  }
+
+  .clients__page .clients__bonus-text ul li:not(:last-child):after {
+    right: -35px;
+    top: 20px;
+  }
+
+  .clients__page .clients__bonus-text ul li:not(:last-child) {
+    margin-right: 60px;
+  }
+
+}
+
+
+@media (max-width: 365px) {
+
+  .clients__page .clients__bonus-text ul li:not(:last-child) {
+    margin-right: 42px;
+  }
+
+  .clients__page .clients__bonus-text ul li:not(:last-child):after {
+    right: -30px;
+  }
+
+  .clients__page .clients__advantages-caption{
+    width: 100%;
+  }
+
+  .clients__page .clients__card-item p{
+    width: 100%;
+  }
+
+}
+

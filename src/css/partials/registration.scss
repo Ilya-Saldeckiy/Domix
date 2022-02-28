@@ -1739,6 +1739,11 @@
   margin-bottom: 0;
 }
 
+.count-block{
+  padding-top: 0;
+}
+
+
 
 
 
@@ -2016,6 +2021,14 @@ margin-bottom: 48px;
 .regis__wrapper-block{
 width: 100%;
 }
+
+  .catalog-filtr-ch3-styler .form-check-label{
+    margin-left: 3px;
+  }
+
+  .regis__more-additional-position__btn{
+    margin-bottom: 2px;
+  }
 
 #modalMap{
 height: 100vh;
@@ -2335,6 +2348,24 @@ bottom: -4px;
 
   .receipt__registration-policy{
     margin-bottom: 0;
+  }
+
+  .product__floor-couner-position{
+    left: -1px;
+  }
+
+  #catalog-filtr-ch3-styler{
+    margin-right: 15px;
+    width: 18px;
+
+  }
+
+  .position__regis-input-check{
+    max-width: 100%;
+  }
+
+  .position__regis-input-check .form-check-label{
+    width: 230px;
   }
 
 

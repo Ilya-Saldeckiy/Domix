@@ -24,6 +24,10 @@
 
   }
 
+  & .receipt__count{
+    margin-right: auto;
+  }
+
   .measure{
 
     &__position-date{
@@ -113,7 +117,7 @@
   }
 
   .input-addres{
-    width: 100%;
+    width: calc(100% - 304px);
   }
 
   .small-input{
@@ -197,6 +201,18 @@
   }
 }
 
+@media (max-width: 1024px) {
+
+  .measure__page .regis__step-1{
+    margin-bottom: 37px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+}
+
 @media (max-width: 980px) {
 
   .measure__page .regis__individual .regis__input-block{
@@ -239,6 +255,35 @@
     flex-direction: column;
   }
 
+  .measure__caption{
+    display: block;
+    @include f_24_b;
+    margin-bottom: 70px;
+  }
+
+  .measure__page .regis__step-1{
+    border: 1px solid #E0E0E0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-radius: 12px;
+    margin-bottom: 29px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .measure__page .input-addres{
+    width: 100%;
+  }
+
+  .measure__page .custom-radio+label{
+    font-size: 14px;
+    line-height: 21px;
+  }
+
   .measure__page .measure__date-btn{
     margin-right: 0;
   }
@@ -258,5 +303,9 @@
 
   .measure__page .middle-input{
     width: 100%;
+  }
+
+  .measure__caption h1{
+    @include f_24_b;
   }
 }
